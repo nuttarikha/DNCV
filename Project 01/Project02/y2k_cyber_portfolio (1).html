@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER PORTFOLIO v2000 // ณัฐริกา อนันต์จรรยา</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js for Interactive Dashboard -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Kanit', 'Space Grotesk', sans-serif;
+        }
+
+        /* Y2K 2000s Aesthetic System */
+        body {
+            background-color: #18002e;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255, 113, 206, 0.25) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(1, 205, 254, 0.2) 0%, transparent 45%),
+                linear-gradient(rgba(1, 205, 254, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(1, 205, 254, 0.08) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .y2k-retro-shadow {
+            text-shadow: 3px 3px 0px #ff71ce, -2px -2px 0px #01cdfe;
+        }
+
+        .y2k-glow-text {
+            text-shadow: 0 0 10px #ff71ce, 0 0 20px #01cdfe;
+        }
+
+        .y2k-glass-window {
+            background: rgba(30, 8, 56, 0.88);
+            backdrop-filter: blur(14px);
+            border: 2px solid #ff71ce;
+            box-shadow: 0 0 20px rgba(255, 113, 206, 0.35), inset 0 0 15px rgba(1, 205, 254, 0.2);
+            border-radius: 18px;
+        }
+
+        .win-titlebar {
+            background: linear-gradient(90deg, #ff71ce, #01cdfe, #05ffa1);
+            color: #0b0114;
+            font-weight: 800;
+            padding: 8px 14px;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bubble-btn {
+            background: linear-gradient(180deg, #3d146d 0%, #1c0538 100%);
+            border: 2px solid #01cdfe;
+            box-shadow: 0 4px 12px rgba(1, 205, 254, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 9999px;
+        }
+
+        .bubble-btn:hover {
+            transform: translateY(-3px) scale(1.04);
+            border-color: #ff71ce;
+            box-shadow: 0 8px 22px rgba(255, 113, 206, 0.7);
+            background: linear-gradient(180deg, #5c1899 0%, #2b0754 100%);
+        }
+
+        .bubble-btn.active {
+            background: linear-gradient(180deg, #ff71ce 0%, #a30067 100%);
+            border-color: #05ffa1;
+            color: #ffffff;
+            box-shadow: 0 0 22px rgba(255, 113, 206, 0.9), inset 0 2px 5px rgba(255,255,255,0.6);
+        }
+
+        /* Y2K Iridescent Profile Frame */
+        .photo-frame-y2k {
+            position: relative;
+            padding: 6px;
+            background: linear-gradient(135deg, #ff71ce, #01cdfe, #05ffa1, #fffb96);
+            background-size: 300% 300%;
+            animation: chromeGradient 5s ease infinite;
+            border-radius: 22px;
+            box-shadow: 0 0 30px rgba(255, 113, 206, 0.6);
+        }
+
+        @keyframes chromeGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .photo-frame-inner {
+            background: #0d011a;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #ffffff;
+        }
+
+        /* Y2K Sparkles */
+        .sparkle-icon {
+            position: absolute;
+            pointer-events: none;
+            animation: pulseSparkle 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseSparkle {
+            0% { transform: scale(0.8) rotate(0deg); opacity: 0.6; }
+            100% { transform: scale(1.3) rotate(180deg); opacity: 1; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #18002e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #ff71ce, #01cdfe);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between relative selection:bg-pink-500 selection:text-white">
+
+    <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-[#0d011a] bg-opacity-95 p-4 transition-all duration-700">
+        <div class="y2k-glass-window max-w-xl w-full p-6 text-center relative overflow-hidden border-2 border-pink-400">
+            <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                <span><i class="fa-solid fa-compact-disc animate-spin mr-2"></i>CYBER PORTFOLIO v2000 - NUTTARIKHA ANUNJUNYA</span>
+                <div class="flex space-x-1">
+                    <span class="w-3 h-3 rounded-full bg-yellow-300 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-cyan-400 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-pink-500 inline-block"></span>
+                </div>
+            </div>
+
+            <!-- Profile Portrait Preview in Splash -->
+            <div class="w-36 h-44 mx-auto mb-4 photo-frame-y2k cursor-pointer" onclick="openLightbox('S__11018251_0.jpg')">
+                <div class="photo-frame-inner w-full h-full relative group">
+                    <img src="S__11018251_0.jpg" alt="ณัฐริกา อนันต์จรรยา" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/400x500/18002e/ff71ce?text=Nuttarikha'">
+                    <div class="absolute inset-0 bg-pink-500 bg-opacity-0 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass-plus text-white opacity-0 group-hover:opacity-100 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-2xl md:text-3xl font-extrabold y2k-retro-shadow mb-1 tracking-wider text-cyan-300">
+                ณัฐริกา อนันต์จรรยา
+            </h1>
+            <p class="text-pink-400 font-semibold mb-4 text-sm tracking-wide">
+                SENIOR TRAINING OFFICER // HRD MASTER TRAINER
+            </p>
+
+            <!-- Loading Bar -->
+            <div class="w-full bg-purple-950 rounded-full h-5 p-1 border border-cyan-400 mb-4 shadow-inner">
+                <div id="splash-bar" class="bg-gradient-to-r from-pink-500 via-cyan-400 to-emerald-400 h-full rounded-full w-0 transition-all duration-300"></div>
+            </div>
+
+            <p id="splash-status" class="text-xs text-emerald-400 font-mono mb-6">INITIALIZING Y2K CORE SYSTEM... 0%</p>
+
+            <button id="enter-btn" onclick="closeSplash()" class="bubble-btn px-8 py-3 text-white font-bold text-lg hidden animate-bounce mx-auto flex items-center justify-center gap-2">
+                <i class="fa-solid fa-bolt text-yellow-300"></i> ENTER SYSTEM <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <header class="container mx-auto px-4 pt-6 pb-2">
+            <div class="y2k-glass-window p-4 md:p-6 mb-6 relative">
+                
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    
+                    <!-- Main Profile Frame with User's Photo -->
+                    <div class="relative group cursor-pointer" onclick="openLightbox('S__11018251_0.jpg')">
+                        <div class="w-40 h-48 md:w-44 md:h-56 photo-frame-y2k">
+                            <div class="photo-frame-inner w-full h-full relative">
+                                <img id="profile-img" src="S__11018251_0.jpg" alt="นางสาวณัฐริกา อนันต์จรรยา" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105" onerror="this.src='https://placehold.co/400x500/18002e/ff71ce?text=Nuttarikha'">
+                                <div class="absolute inset-0 bg-pink-500 bg-opacity-0 group-hover:bg-opacity-25 transition flex items-center justify-center">
+                                    <span class="text-xs bg-black bg-opacity-75 text-cyan-300 px-2 py-1 rounded-full border border-cyan-400">
+                                        <i class="fa-solid fa-expand mr-1"></i>ขยายรูป
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="sparkle-icon -top-3 -right-3 text-3xl text-yellow-300">✦</span>
+                        <span class="sparkle-icon -bottom-2 -left-3 text-3xl text-pink-400" style="animation-delay: 1.2s;">★</span>
+                    </div>
+
+                    <!-- Intro Info -->
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-900 bg-opacity-60 border border-pink-400 text-pink-300 text-xs font-mono mb-2">
+                            <i class="fa-solid fa-globe text-cyan-300 animate-spin"></i> HRD & TRAINING SPECIALIST
+                        </div>
+                        <h1 class="text-3xl md:text-5xl font-black y2k-retro-shadow text-white tracking-wide mb-1">
+                            ณัฐริกา อนันต์จรรยา
+                        </h1>
+                        <h2 class="text-lg md:text-2xl font-bold text-cyan-300 mb-3 tracking-wide">
+                            Nuttarikha Anunjunya (นัท / โดนัท)
+                        </h2>
+                        
+                        <div class="flex flex-wrap gap-2 justify-center md:justify-start text-xs md:text-sm font-semibold mb-3">
+                            <span class="bg-purple-900/80 border border-cyan-400 text-cyan-200 px-3 py-1 rounded-full">
+                                <i class="fa-solid fa-briefcase text-yellow-300 mr-1"></i> Senior Training Officer (Svizz-One / Deestone)
+                            </span>
+                            <span class="bg-purple-900/80 border border-pink-400 text-pink-200 px-3 py-1 rounded-full">
+                                <i class="fa-solid fa-graduation-cap text-pink-400 mr-1"></i> KMUTNB S-MBR 17
+                            </span>
+                            <span class="bg-purple-900/80 border border-emerald-400 text-emerald-200 px-3 py-1 rounded-full">
+                                <i class="fa-solid fa-award text-emerald-300 mr-1"></i> เกียรตินิยมอันดับ 2 ม.ศิลปากร
+                            </span>
+                        </div>
+                        
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed max-w-2xl">
+                            ผู้เชี่ยวชาญการบริหารและพัฒนาทรัพยากรมนุษย์ (HRD), การจัดทำแผนอบรมประจำปี, การประเมินผลฝึกอบรม, Master Trainer กรมพัฒนาฝีมือแรงงาน และผู้ตรวจติดตามคุณภาพ ISO 9001 / ISO 14001
+                        </p>
+                    </div>
+
+                    <!-- Status Box -->
+                    <div class="bg-purple-950 bg-opacity-90 border-2 border-emerald-400 rounded-2xl p-4 text-center min-w-[170px] shadow-lg">
+                        <div class="text-emerald-400 text-xs font-mono mb-1"><i class="fa-solid fa-circle text-[10px] text-emerald-400 animate-ping mr-1"></i>STATUS: ONLINE</div>
+                        <div class="text-xl font-black text-yellow-300">ISO AUDITOR</div>
+                        <div class="text-xs text-slate-300 mt-1">ISO 9001 & 14001</div>
+                        <div class="mt-3 pt-2 border-t border-purple-800">
+                            <span class="text-[11px] bg-pink-600 text-white font-bold px-2 py-0.5 rounded-full">Master Trainer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="flex flex-wrap justify-center gap-2 md:gap-3 my-4">
+                <button onclick="switchTab('tab-1')" id="btn-tab-1" class="bubble-btn active px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-user-graduate mr-1.5 text-yellow-300"></i> 1. ประวัติการศึกษา
+                </button>
+                <button onclick="switchTab('tab-2')" id="btn-tab-2" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-address-card mr-1.5 text-cyan-300"></i> 2. สถานที่ติดต่อ
+                </button>
+                <button onclick="switchTab('tab-3')" id="btn-tab-3" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-trophy mr-1.5 text-pink-400"></i> 3. ผลงานโดดเด่น
+                </button>
+                <button onclick="switchTab('tab-4')" id="btn-tab-4" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-book-bookmark mr-1.5 text-emerald-300"></i> 4. ผลงานวิชาการ
+                </button>
+                <button onclick="switchTab('tab-5')" id="btn-tab-5" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-newspaper mr-1.5 text-yellow-200"></i> 5. ผลงานบทความวิจัย
+                </button>
+                <button onclick="switchTab('tab-6')" id="btn-tab-6" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-chalkboard-user mr-1.5 text-purple-300"></i> 6. งานวิทยากร
+                </button>
+                <button onclick="switchTab('tab-7')" id="btn-tab-7" class="bubble-btn px-4 py-2.5 text-xs md:text-sm font-bold text-white flex items-center">
+                    <i class="fa-solid fa-chart-line mr-1.5 text-cyan-300"></i> 7. Dashboard
+                </button>
+            </nav>
+        </header>
+
+        <main class="container mx-auto px-4 my-6">
+
+            <!-- TAB 1: ประวัติการศึกษา -->
+            <section id="tab-1" class="tab-content block">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-graduation-cap mr-2"></i>1_EDUCATION_HISTORY.DAT</span>
+                        <span class="text-xs">SYS_ACADEMIC_RECORD</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Master Degree -->
+                        <div class="bg-purple-950/70 border-l-4 border-pink-400 p-5 rounded-r-xl relative shadow-md">
+                            <span class="absolute top-4 right-4 text-xs font-bold px-3 py-1 bg-pink-600 text-white rounded-full">กำลังศึกษา</span>
+                            <h3 class="text-lg md:text-xl font-bold text-pink-300"><i class="fa-solid fa-microchip text-cyan-300 mr-2"></i>ระดับปริญญาโท (Master's Degree)</h3>
+                            <p class="text-base text-white font-semibold mt-1">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</p>
+                            <p class="text-sm text-cyan-200">โครงการบริหารธุรกิจมหาบัณฑิต S-MBR รุ่นที่ 17 (KMUTNB S-MBR 17)</p>
+                        </div>
+
+                        <!-- Bachelor Degree -->
+                        <div class="bg-purple-950/70 border-l-4 border-cyan-400 p-5 rounded-r-xl shadow-md">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-600 text-white rounded-full inline-block mb-2">เกียรตินิยมอันดับ 2</span>
+                            <h3 class="text-lg md:text-xl font-bold text-cyan-300"><i class="fa-solid fa-award text-yellow-300 mr-2"></i>ระดับปริญญาตรี (Bachelor's Degree)</h3>
+                            <p class="text-base text-white font-semibold mt-1">มหาวิทยาลัยศิลปากร วิทยาเขตสารสนเทศเพชรบุรี (Silpakorn University)</p>
+                            <p class="text-sm text-yellow-200">บริหารธุรกิจบัณฑิต (บธ.บ.) สาขาการจัดการทั่วไป (วิชาเอกการเงิน)</p>
+                            <p class="text-sm text-emerald-300 font-bold mt-1"><i class="fa-solid fa-star text-yellow-300 mr-1"></i>เกรดเฉลี่ยสะสม GPA: 3.40</p>
+                        </div>
+
+                        <!-- High School -->
+                        <div class="bg-purple-950/70 border-l-4 border-emerald-400 p-5 rounded-r-xl shadow-md">
+                            <h3 class="text-lg md:text-xl font-bold text-emerald-300"><i class="fa-solid fa-school text-pink-300 mr-2"></i>ระดับมัธยมศึกษา (High School)</h3>
+                            <p class="text-base text-white font-semibold mt-1">โรงเรียนคงทองวิทยา</p>
+                            <p class="text-sm text-slate-300">สำเร็จการศึกษาชั้นมัธยมศึกษาตอนปลาย</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: สถานที่ติดต่อ -->
+            <section id="tab-2" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-address-book mr-2"></i>2_CONTACT_CARD.SYS</span>
+                        <span class="text-xs font-mono">PORT: 8080</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-purple-900/60 border border-pink-400 rounded-2xl shadow-md">
+                                <i class="fa-solid fa-phone text-2xl text-pink-400 w-12 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-pink-300 font-bold">เบอร์โทรศัพท์</div>
+                                    <div class="text-base font-extrabold text-white">087-716-2468</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-purple-900/60 border border-cyan-400 rounded-2xl shadow-md">
+                                <i class="fa-solid fa-envelope text-2xl text-cyan-400 w-12 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-cyan-300 font-bold">อีเมลนักศึกษา (KMUTNB)</div>
+                                    <div class="text-sm md:text-base font-extrabold text-white break-all">s6916011856072@email.kmutnb.ac.th</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-4 bg-purple-900/60 border border-emerald-400 rounded-2xl shadow-md">
+                                <i class="fa-brands fa-line text-2xl text-emerald-400 w-12 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-emerald-300 font-bold">LINE ID</div>
+                                    <div class="text-base font-extrabold text-white">dn_ntrk</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 bg-purple-900/60 border border-yellow-400 rounded-2xl shadow-md">
+                                <div class="text-xs text-yellow-300 font-bold mb-1"><i class="fa-solid fa-location-dot mr-1"></i>ที่อยู่ปัจจุบัน / สถานที่ติดต่อ</div>
+                                <p class="text-sm text-slate-200 leading-relaxed font-semibold">
+                                    83 หมู่ 10 ต.บางปลา อ.บางเลน จ.นครปฐม 73130
+                                </p>
+                            </div>
+
+                            <div class="p-4 bg-purple-900/60 border border-purple-400 rounded-2xl shadow-md">
+                                <div class="text-xs text-purple-300 font-bold mb-1"><i class="fa-solid fa-building mr-1"></i>สถานที่ทำงานปัจจุบัน</div>
+                                <p class="text-sm font-bold text-white">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด</p>
+                                <p class="text-xs text-slate-300">(Svizz-One Corporation / Deestone Group)</p>
+                                <p class="text-xs text-cyan-300 font-semibold mt-2">ตำแหน่ง: เจ้าหน้าที่ฝึกอบรมอาวุโส (Senior Training Officer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: ผลงานโดดเด่น -->
+            <section id="tab-3" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-trophy mr-2"></i>3_FEATURED_ACHIEVEMENTS.EXE</span>
+                        <span class="text-xs">AWARDS & ROLES</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <div class="bg-purple-950 border-2 border-pink-400 p-5 rounded-2xl text-center relative overflow-hidden">
+                            <div class="text-4xl text-pink-400 mb-2"><i class="fa-solid fa-award"></i></div>
+                            <h4 class="font-bold text-white text-base mb-1">พนักงานดีเด่นประจำปี</h4>
+                            <p class="text-xs text-yellow-300 font-bold mb-2">ประจำปี 2563, 2563-2564, 2566, 2566-2567</p>
+                            <p class="text-xs text-slate-300">ได้รับรางวัลพนักงานดีเด่นอย่างต่อเนื่องในองค์กร Deestone Group</p>
+                        </div>
+
+                        <div class="bg-purple-950 border-2 border-cyan-400 p-5 rounded-2xl text-center">
+                            <div class="text-4xl text-cyan-400 mb-2"><i class="fa-solid fa-user-gear"></i></div>
+                            <h4 class="font-bold text-white text-base mb-1">Senior Training Officer</h4>
+                            <p class="text-xs text-cyan-300 font-bold mb-2">Svizz-One Corporation</p>
+                            <p class="text-xs text-slate-300">บริหารและจัดทำแผนการฝึกอบรมบุคลากรทั้งระบบ ประเมินผล และส่งเสริมศักยภาพองค์กร</p>
+                        </div>
+
+                        <div class="bg-purple-950 border-2 border-emerald-400 p-5 rounded-2xl text-center">
+                            <div class="text-4xl text-emerald-400 mb-2"><i class="fa-solid fa-certificate"></i></div>
+                            <h4 class="font-bold text-white text-base mb-1">Master Trainer Certified</h4>
+                            <p class="text-xs text-emerald-300 font-bold mb-2">กรมพัฒนาฝีมือแรงงาน</p>
+                            <p class="text-xs text-slate-300">ผ่านการรับรองเป็นวิทยากรต้นแบบในการฝึกอบรมและโค้ชครูฝึกในองค์กร</p>
+                        </div>
+
+                        <div class="bg-purple-950 border-2 border-purple-400 p-5 rounded-2xl text-center md:col-span-2 lg:col-span-3">
+                            <div class="text-3xl text-yellow-300 mb-2"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h4 class="font-bold text-white text-base mb-1">Internal Auditor ISO 9001 & ISO 14001</h4>
+                            <p class="text-xs text-slate-300 max-w-xl mx-auto">
+                                รับหน้าที่เป็นผู้ตรวจติดตามระบบบริหารคุณภาพและระบบจัดการสิ่งแวดล้อมภายในองค์กร ตรวจสอบมาตรฐาน และปรับปรุงกระบวนการฝึกอบรมตามข้อกำหนดสากล
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: ผลงานวิชาการ -->
+            <section id="tab-4" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-book-bookmark mr-2"></i>4_ACADEMIC_WORKS.DAT</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 bg-purple-950/80 border-2 border-pink-400 rounded-2xl">
+                            <div class="flex items-center gap-2 text-xs font-bold text-pink-300 mb-1">
+                                <i class="fa-solid fa-graduation-cap"></i> งานวิจัยระดับปริญญาตรี มหาวิทยาลัยศิลปากร (2560)
+                            </div>
+                            <h4 class="font-bold text-base text-white">
+                                ปัจจัยส่วนผสมทางการตลาดที่มีผลต่อพฤติกรรมการตัดสินใจซื้อเครื่องสำอางเกาหลีผ่านช่องทางออนไลน์
+                            </h4>
+                            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                                การศึกษาพฤติกรรมผู้บริโภคในการตัดสินใจซื้อเครื่องสำอางเกาหลีออนไลน์ วิเคราะห์ปัจจัยราคา โปรโมชั่น และความน่าเชื่อถือของแพลตฟอร์ม digital commerce
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-purple-950/80 border-2 border-cyan-400 rounded-2xl">
+                            <div class="flex items-center gap-2 text-xs font-bold text-cyan-300 mb-1">
+                                <i class="fa-solid fa-graduation-cap"></i> งานวิจัยระดับปริญญาตรี มหาวิทยาลัยศิลปากร (2561)
+                            </div>
+                            <h4 class="font-bold text-base text-white">
+                                การเพิ่มมูลค่าและการสร้างแบรนด์ผลิตภัณฑ์แปรรูปจากตาลตระนอด ในพื้นที่จังหวัดเพชรบุรี
+                            </h4>
+                            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                                การพัฒนากลยุทธ์การตลาดชุมชน สร้างอัตลักษณ์แบรนด์ท้องถิ่น และยกระดับมาตรฐานบรรจุภัณฑ์เพื่อสร้างมูลค่าเพิ่มให้สินค้าเกษตรแปรรูป
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: ผลงานบทความวิจัย -->
+            <section id="tab-5" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-newspaper mr-2"></i>5_RESEARCH_ARTICLES.LOG</span>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="p-5 bg-purple-950/80 border-2 border-yellow-400 rounded-2xl">
+                            <span class="text-xs font-mono px-2 py-1 bg-yellow-500 text-black font-bold rounded">NATIONAL CONFERENCE 2019</span>
+                            <h4 class="text-lg font-bold text-white mt-3">
+                                การนำเสนอผลงานวิจัยแบบบรรยาย (Oral Presentation)
+                            </h4>
+                            <p class="text-sm text-yellow-300 font-semibold mt-1">
+                                การประชุมวิชาการระดับชาติ ตรังวิจัย ครั้งที่ 8 (The 8th PSU Trang National Conference on Research across Disciplines 2019)
+                            </p>
+                            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                                นำเสนอผลงานวิจัยด้านการจัดการองค์กรและการตลาดชุมชน ได้รับการตีพิมพ์เผยแพร่ในรายงานสืบเนื่องจากการประชุมวิชาการ (Proceeding)
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-purple-950/80 border-2 border-emerald-400 rounded-2xl">
+                            <span class="text-xs font-mono px-2 py-1 bg-emerald-500 text-black font-bold rounded">HRD & E-LEARNING ARTICLE</span>
+                            <h4 class="text-lg font-bold text-white mt-3">
+                                บทความวิชาการ: การพัฒนา Microlearning & E-Learning ในระบบการฝึกอบรมพนักงานภาคอุตสาหกรรม
+                            </h4>
+                            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                                การประยุกต์ใช้โมดูลการเรียนรู้ระยะสั้นดิจิทัล เพื่อลด Skill Gap และเพิ่มประสิทธิภาพการทำงานของบุคลากรในโรงงานอุตสาหกรรม
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 6: งานวิทยากร -->
+            <section id="tab-6" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-chalkboard-user mr-2"></i>6_SPEAKER_TRAINER_EXP.SYS</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-purple-950 border border-pink-400 rounded-xl">
+                            <h4 class="font-bold text-pink-300 text-sm mb-1"><i class="fa-solid fa-bullhorn mr-2"></i>วิทยากรหลัก: หลักสูตร Soft Skills & Professional Conduct</h4>
+                            <p class="text-xs text-slate-300">บรรยายหัวข้อ มารยาทในการทำงาน, การสื่อสารในองค์กร และการทำงานร่วมกันเป็นทีม (Teamwork & Communication)</p>
+                        </div>
+
+                        <div class="p-4 bg-purple-950 border border-cyan-400 rounded-xl">
+                            <h4 class="font-bold text-cyan-300 text-sm mb-1"><i class="fa-solid fa-brain mr-2"></i>วิทยากร: การวิเคราะห์สาเหตุของปัญหา (Root Cause Analysis - RCA)</h4>
+                            <p class="text-xs text-slate-300">ฝึกอบรมเชิงปฏิบัติการเครื่องมือแก้ไขปัญหา 5-Why, Fishbone Diagram เพื่อแก้ปัญหาในกระบวนการผลิต</p>
+                        </div>
+
+                        <div class="p-4 bg-purple-950 border border-emerald-400 rounded-xl">
+                            <h4 class="font-bold text-emerald-300 text-sm mb-1"><i class="fa-solid fa-chalkboard mr-2"></i>Master Trainer: Coaching & OJT Internal Trainers</h4>
+                            <p class="text-xs text-slate-300">พัฒนาและสอนเทคนิคการเป็นครูฝึกในงาน (On-the-Job Training) ให้แก่หัวหน้างานและ Supervisor</p>
+                        </div>
+
+                        <div class="p-4 bg-purple-950 border border-yellow-400 rounded-xl">
+                            <h4 class="font-bold text-yellow-300 text-sm mb-1"><i class="fa-solid fa-shield-halved mr-2"></i>ผู้ดำเนินกิจกรรม: Safety & ISO Standard Awareness</h4>
+                            <p class="text-xs text-slate-300">จัดกิจกรรมสร้างความตระหนักรูด้านความปลอดภัยในการทำงาน และมาตรฐานคุณภาพ ISO 9001 / ISO 14001</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 7: Dashboard รายงานผลงาน -->
+            <section id="tab-7" class="tab-content hidden">
+                <div class="y2k-glass-window p-6">
+                    <div class="win-titlebar -mx-6 -mt-6 mb-6">
+                        <span><i class="fa-solid fa-chart-column mr-2"></i>7_PERFORMANCE_DASHBOARD.SYS</span>
+                        <span class="text-xs text-emerald-300">LIVE HRD METRICS</span>
+                    </div>
+
+                    <!-- Counter KPI Cards -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-purple-950 border-2 border-pink-400 p-4 rounded-xl text-center">
+                            <div class="text-xs text-pink-300 font-bold">ชั่วโมงอบรมสะสม/ปี</div>
+                            <div class="text-2xl md:text-3xl font-black text-white mt-1">520+ ชม.</div>
+                        </div>
+                        <div class="bg-purple-950 border-2 border-cyan-400 p-4 rounded-xl text-center">
+                            <div class="text-xs text-cyan-300 font-bold">ผู้ผ่านการอบรมรวม</div>
+                            <div class="text-2xl md:text-3xl font-black text-white mt-1">1,450+ คน</div>
+                        </div>
+                        <div class="bg-purple-950 border-2 border-emerald-400 p-4 rounded-xl text-center">
+                            <div class="text-xs text-emerald-300 font-bold">ความพึงพอใจเฉลี่ย</div>
+                            <div class="text-2xl md:text-3xl font-black text-yellow-300 mt-1">98.5%</div>
+                        </div>
+                        <div class="bg-purple-950 border-2 border-yellow-400 p-4 rounded-xl text-center">
+                            <div class="text-xs text-yellow-300 font-bold">ISO Audit Pass Rate</div>
+                            <div class="text-2xl md:text-3xl font-black text-emerald-400 mt-1">100%</div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-purple-950/80 p-4 rounded-2xl border-2 border-pink-400">
+                            <h4 class="text-xs font-bold text-pink-300 mb-3 text-center">สัดส่วนหมวดหมู่อบรม (Training Categories)</h4>
+                            <div class="h-60">
+                                <canvas id="chart1"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-purple-950/80 p-4 rounded-2xl border-2 border-cyan-400">
+                            <h4 class="text-xs font-bold text-cyan-300 mb-3 text-center">สถิติผู้เข้ารับการอบรมรายไตรมาส (Quarterly Trainees)</h4>
+                            <div class="h-60">
+                                <canvas id="chart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-2xl w-full y2k-glass-window p-2 border-2 border-pink-400" onclick="event.stopPropagation()">
+            <div class="win-titlebar mb-2">
+                <span><i class="fa-solid fa-image mr-2"></i>IMAGE_VIEWER.EXE</span>
+                <button onclick="closeLightbox()" class="text-black font-black text-sm px-2 bg-red-400 hover:bg-red-500 rounded">X</button>
+            </div>
+            <div class="max-h-[80vh] overflow-hidden rounded-xl">
+                <img id="lightbox-img" src="" alt="Full Preview" class="w-full h-auto object-contain mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-[#e2e8f0] text-slate-800 text-center py-3.5 border-t-2 border-slate-400 text-xs md:text-sm font-bold shadow-md mt-10">
+        ระบบเว็บส่วนบุคคล พัฒนาโดย นางสาวณัฐริกา อนันต์จรรยา
+    </footer>
+
+    <script>
+        // Splash Screen Logic
+        window.addEventListener('load', () => {
+            let progress = 0;
+            const bar = document.getElementById('splash-bar');
+            const status = document.getElementById('splash-status');
+            const enterBtn = document.getElementById('enter-btn');
+
+            const interval = setInterval(() => {
+                progress += 20;
+                if(bar) bar.style.width = progress + '%';
+                if(status) status.innerText = `INITIALIZING Y2K CORE SYSTEM... ${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    if(status) status.innerText = 'SYSTEM ONLINE // ACCESS GRANTED';
+                    if(enterBtn) enterBtn.classList.remove('hidden');
+                }
+            }, 120);
+
+            initCharts();
+        });
+
+        function closeSplash() {
+            const splash = document.getElementById('splash-screen');
+            if(splash) {
+                splash.style.opacity = '0';
+                setTimeout(() => {
+                    splash.style.display = 'none';
+                }, 500);
+            }
+        }
+
+        // Tab Switcher
+        function switchTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(c => c.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll('.bubble-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+
+            const target = document.getElementById(tabId);
+            if(target) target.classList.remove('hidden');
+
+            const btnId = 'btn-' + tabId;
+            const activeBtn = document.getElementById(btnId);
+            if(activeBtn) activeBtn.classList.add('active');
+        }
+
+        // Lightbox Handler
+        function openLightbox(imgSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            if(lightbox && lightboxImg) {
+                lightboxImg.src = imgSrc;
+                lightbox.classList.remove('hidden');
+            }
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            if(lightbox) {
+                lightbox.classList.add('hidden');
+            }
+        }
+
+        // Chart.js Configuration
+        function initCharts() {
+            const ctx1 = document.getElementById('chart1');
+            if(ctx1) {
+                new Chart(ctx1, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['ISO & Safety Standards', 'Soft Skills & Leadership', 'Technical & OJT', 'Orientation & Onboarding'],
+                        datasets: [{
+                            data: [35, 30, 20, 15],
+                            backgroundColor: ['#ff71ce', '#01cdfe', '#05ffa1', '#fffb96'],
+                            borderWidth: 2,
+                            borderColor: '#18002e'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#ffffff', font: { family: 'Kanit', size: 11 } }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const ctx2 = document.getElementById('chart2');
+            if(ctx2) {
+                new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                        datasets: [{
+                            label: 'จำนวนพนักงานที่ผ่านการฝึกอบรม (คน)',
+                            data: [340, 410, 480, 320],
+                            backgroundColor: '#01cdfe',
+                            borderColor: '#05ffa1',
+                            borderWidth: 1.5,
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { ticks: { color: '#ffffff' }, grid: { color: 'rgba(255,255,255,0.1)' } },
+                            y: { ticks: { color: '#ffffff' }, grid: { color: 'rgba(255,255,255,0.1)' } }
+                        },
+                        plugins: {
+                            legend: { labels: { color: '#ffffff', font: { family: 'Kanit' } } }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

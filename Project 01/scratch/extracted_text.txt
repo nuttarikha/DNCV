@@ -1,0 +1,521 @@
+﻿<w:tab w:val="center" w:pos="4513"/></w:tabs><w:spacing w:after="0"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>คณะพัฒนาธุรกิจและอุตสาหกรรม
+<w:tab w:val="center" w:pos="4513"/></w:tabs><w:spacing w:after="0"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+<w:tab w:val="center" w:pos="4513"/></w:tabs><w:spacing w:after="0"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:tab/></w:r></w:p><w:p w14:paraId="40FF1605" w14:textId="74E55046" w:rsidR="00C2259F" w:rsidRPr="00AC1978" w:rsidRDefault="00C2259F" w:rsidP="00C2259F"><w:pPr><w:tabs><w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5850"/></w:tabs><w:spacing w:after="0" w:line="276" w:lineRule="auto"/><w:ind w:left="142"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>การสอบ
+กลางภาคเรียน
+  ประจำภาคการศึกษาที่  
+1
+</w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:tab/></w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t xml:space="preserve">ปีการศึกษา 
+256
+9
+รหัสและชื่อวิชา 
+160115201 
+การจัดการเทคโนโลยีสารสนเทศเพื่อธุรกิจ
+</w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t xml:space="preserve">ตอนเรียนที่ 
+1
+วันที่สอบ 
+29 
+สิงหาคม
+ 
+256
+9
+</w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:tab/></w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t xml:space="preserve">เวลา 
+17
+.00 - 
+20
+.00 
+น
+.
+<w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5850"/></w:tabs><w:spacing w:after="0" w:line="276" w:lineRule="auto"/><w:ind w:left="142"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>ชื่ออาจารย์ผู้รับผิดชอบรายวิชา ผศ
+.
+ดร
+.
+จิรพันธุ์  ศรีสมพันธุ์
+,
+ ผศ
+.
+ดร
+.
+กฤช สินธนะกุล
+ 
+<w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5850"/></w:tabs><w:spacing w:after="0" w:line="276" w:lineRule="auto"/><w:ind w:left="180"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>รหัสประจำตัวนักศึกษา
+ 
+s6916011856072 
+ 
+ชื่อนักศึกษา
+ 
+นางสาวณัฐริกา อนันต์จรรยา
+สถานที่ทำงาน
+ 
+บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด
+ตำแหน่งงาน
+ เจ้าหน้าที่ฝึกอบรมอาวุโส
+<w:tab w:val="left" w:pos="142"/><w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5103"/></w:tabs><w:spacing w:after="0"/><w:ind w:left="142"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/></w:rPr></w:pPr></w:p><w:p w14:paraId="5ABE34BC" w14:textId="77777777" w:rsidR="00C2259F" w:rsidRPr="00AC1978" w:rsidRDefault="00C2259F" w:rsidP="00C2259F"><w:pPr><w:tabs><w:tab w:val="left" w:pos="142"/><w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5103"/></w:tabs><w:spacing w:after="0"/><w:ind w:left="142"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/><w:u w:val="single"/><w:cs/></w:rPr><w:t>คำสั่งข้อสอบ
+<w:tab w:val="left" w:pos="142"/><w:tab w:val="left" w:pos="851"/><w:tab w:val="left" w:pos="5103"/></w:tabs><w:spacing w:after="0"/><w:ind w:left="142"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:t xml:space="preserve">1.  
+ข้อสอบมี 
+4 ข้อ 
+ 
+ 
+(
+4
+0 
+คะแนน
+)
+2.  
+ให้ทำทุกข้อลงในไฟล์ข้อสอบ และส่งไฟล์ในรูปแบบ 
+doc 
+และ 
+pdf 
+ไฟล์ใน 
+Google Classroom 
+รายวิชา
+ 
+3.  
+การสอบแบบ
+เปิดตำรา
+ 
+และสื่อออนไลน์ได้ทุกประเภท
+4.  
+ห้ามเผยแพร่ข้อสอบ หรือคัดลอกข้อสอบ
+  
+มิฉะนั้นจะถือว่าเป็นการทุจริตในการสอบ
+<w:p w14:paraId="48894088" w14:textId="77777777" w:rsidR="00C2259F" w:rsidRPr="00C2259F" w:rsidRDefault="00C2259F" w:rsidP="00C2259F"><w:pPr><w:spacing w:before="120"/><w:jc w:val="center"/><w:textDirection w:val="btLr"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="44"/><w:szCs w:val="44"/></w:rPr></w:pPr><w:r w:rsidRPr="00C2259F"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="000000"/><w:sz w:val="44"/><w:szCs w:val="44"/><w:cs/></w:rPr><w:t>การทุจริตในการสอบถือเป็นความผิดร้ายแรง มีโทษสูงสุด
+<w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="44"/><w:szCs w:val="44"/></w:rPr></w:pPr><w:r w:rsidRPr="00C2259F"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="000000"/><w:sz w:val="44"/><w:szCs w:val="44"/><w:cs/></w:rPr><w:t>ให้พ้นสภาพการเป็นนักศึกษา
+<w:p w14:paraId="48894088" w14:textId="77777777" w:rsidR="00C2259F" w:rsidRPr="00C2259F" w:rsidRDefault="00C2259F" w:rsidP="00C2259F"><w:pPr><w:spacing w:before="120"/><w:jc w:val="center"/><w:textDirection w:val="btLr"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="44"/><w:szCs w:val="44"/></w:rPr></w:pPr><w:r w:rsidRPr="00C2259F"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="000000"/><w:sz w:val="44"/><w:szCs w:val="44"/><w:cs/></w:rPr><w:t>การทุจริตในการสอบถือเป็นความผิดร้ายแรง มีโทษสูงสุด
+<w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="44"/><w:szCs w:val="44"/></w:rPr></w:pPr><w:r w:rsidRPr="00C2259F"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="000000"/><w:sz w:val="44"/><w:szCs w:val="44"/><w:cs/></w:rPr><w:t>ให้พ้นสภาพการเป็นนักศึกษา
+1. จากภาพที่กําหนดให
+้
+เป็นโครงสร้างการบริหารงานของบริษัทแห่งหนึ่ง 
+จงยกตัวอย
+่
+างชื่อตําแหน
+่
+งงานของผ
+ู้
+ปฏิบัติงานตามระดับในภาพ และกําหนดประเภทของ
+ 
+ระบบสารสนเทศ
+ (
+TPS, MIS, DSS, ESS) 
+ให
+้
+สอดคล
+้
+องกับระดับของผู
+้
+ปฏิบัติงานในองค
+์
+กร
+ธุรกิจขายสินค้าออนไลน์ 
+(
+6
+ คะแนน)
+ตอบ
+<w:tblPr><w:tblStyle w:val="TableGrid"/><w:tblW w:w="0" w:type="auto"/><w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/></w:tblPr><w:tblGrid><w:gridCol w:w="3134"/><w:gridCol w:w="3134"/><w:gridCol w:w="3134"/></w:tblGrid><w:tr w:rsidR="0057340B" w:rsidRPr="00AC1978" w14:paraId="20884C64" w14:textId="77777777" w:rsidTr="0057340B"><w:tc><w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="302E7CEB" w14:textId="0BFE6A39" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="0057340B" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsiaTheme="minorHAnsi" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/><w:cs/></w:rPr><w:t>ระดับการทำงาน
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="027B05D6" w14:textId="0BF792FF" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="0057340B" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsiaTheme="minorHAnsi" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/><w:cs/></w:rPr><w:t>ชื่อ
+ตำแหน่งงาน
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="449B9AA4" w14:textId="6AE0BBE0" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="0057340B" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:u w:val="single"/><w:cs/></w:rPr><w:t>ระบบสารสนเทศ
+<w:tc><w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="27E75565" w14:textId="78BD752E" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>Senior Manage
+r
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="70C3DEF4" w14:textId="408A0B43" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ประธานเจ้าหน้าที่บริหาร (
+CEO), 
+ประธานเจ้าหน้าที่ฝ่ายเทคโนโลยี (
+CTO), 
+ผู้อำนวยการฝ่าย 
+E-Commerce
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="254D199F" w14:textId="3F076261" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="00AA5E2E" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>ESS
+ 
+ใช้แดชบอร์ดสรุปภาพรวมธุรกิจ (
+Business Dashboard) 
+เพื่อติดตามยอดขายรวมทุกช่องทาง (
+Shopee, Lazada, TikTok Shop, Website) 
+ดูภาพรวมกำไรขาดทุน ติดตาม 
+KPI 
+และใช้วิเคราะห์วิสัยทัศน์/วางแผนกลยุทธ์การขยายตลาดในระยะยาว
+<w:tc><w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="44D7A2FB" w14:textId="44362037" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>Middle manager
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="1F9448A2" w14:textId="7D4DB67B" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ผู้จัดการฝ่ายการตลาดออนไลน์
+, 
+ผู้จัดการคลังสินค้าและจัดส่ง
+, 
+ผู้จัดการฝ่ายคลังสินค้า
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="16B33357" w14:textId="40655F9B" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="00AA5E2E" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>DSS
+ 
+ใช้วิเคราะห์ข้อมูลเชิงลึกและการคาดการณ์ (
+What-If Analysis) 
+เช่น คำนวณความคุ้มค่าของการจัดโปรโมชั่น 
+Campaign Flash Sale, 
+วิเคราะห์การตัดงบโฆษณา (
+Ad Spend vs. ROI) 
+และพยากรณ์ยอดขายเพื่อวางแผนการสั่งซื้อสต๊อกสินค้ารายไตรมาส
+<w:tc><w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="71EE6A01" w14:textId="35216944" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:lastRenderedPageBreak/><w:t>Data Workers
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="6265A544" w14:textId="54B79C1D" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>นักวิเคราะห์ข้อมูลการตลาด (
+Data Analyst), 
+เจ้าหน้าที่คอนเทนต์และโฆษณา (
+Content &amp; Ads Specialist)
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="70821A1C" w14:textId="2566302C" w:rsidR="0057340B" w:rsidRPr="00AC1978" w:rsidRDefault="00EA39AB" w:rsidP="0057340B"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>MIS
+ 
+รวบรวมและวิเคราะห์พฤติกรรมลูกค้า ดึงรายงานสรุปยอดขายรายสัปดาห์/รายเดือนจากระบบ 
+MIS 
+เพื่อนำมาวางแผนทำโปรโมชั่น จัดทำรายงานสรุปประสิทธิภาพของแคมเปญโฆษณา และออกแบบสื่อการตลาดให้ตรงกลุ่มเป้าหมาย
+<w:tc><w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="46866F8D" w14:textId="0412A232" w:rsidR="001E0DBC" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="001E0DBC"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>Operational
+ 
+managers
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="2E724FC9" w14:textId="7DCCE246" w:rsidR="001E0DBC" w:rsidRPr="00AC1978" w:rsidRDefault="00AA5E2E" w:rsidP="001E0DBC"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>หัวหน้า/
+เจ้าหน้าที่คีย์ข้อมูลคำสั่งซื้อ
+, 
+หัวหน้า/
+เจ้าหน้าที่แพ็กและจัดส่งสินค้า
+, 
+หัวหน้า/
+พนักงานฝ่ายบริการลูกค้าหน้าร้าน/แชต
+<w:tcPr><w:tcW w:w="3134" w:type="dxa"/></w:tcPr><w:p w14:paraId="726BAA82" w14:textId="12CB750E" w:rsidR="001E0DBC" w:rsidRPr="00AC1978" w:rsidRDefault="001E0DBC" w:rsidP="001E0DBC"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr><w:t>TPS
+ 
+ 
+(
+ร่วมกับ 
+MIS 
+สรุปรายงานประจำวัน)
+ 
+เป็นระบบประมวลผลรายการประจำวัน เช่น ระบบบันทึกการสั่งซื้อ (
+Order Processing System), 
+ระบบสแกนบาร์โค้ดตัดสต็อกสินค้าคงคลังแบบเรียลไทม์ และระบบออกใบเสร็จรับเงิน
+<w:tab w:val="left" w:pos="270"/></w:tabs><w:jc w:val="thaiDistribute"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK" w:hint="cs"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:t xml:space="preserve">2. 
+หากต้องการนำระบบสนเทศมาใช้ในองค์กรของท่าน องค์ประกอบของระบบสารสนเทศทั้ง 
+5 
+องค์ประกอบที่มีอยู่เดิมใน
+องค์กรของท่าน
+เป็นอย่างไร และหากต้องการเปลี่ยนแปลง
+กระบวนการทำงาน
+ควรเปลี่ยนแปลงอย่างไร และหลังการเปลี่ยนแปลงท่านคิดว่าจะส่งผลต่อประสิทธิภาพการทำงานอย่างไรบ้าง อธิบายพร้อมยกตัวอย่างประกอบ
+ให้สอดคล้องกับภาระกิจหลักของ
+องค์กร 
+(10 คะแนน)
+<w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:between w:val="nil"/></w:pBdr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:spacing w:before="240"/><w:ind w:right="-369"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="FF0000"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:noProof/><w:color w:val="FF0000"/></w:rPr><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="3C16B740" wp14:editId="4B638269"><wp:extent cx="3820036" cy="2149888"/><wp:effectExtent l="0" t="0" r="0" b="3175"/><wp:docPr id="1542179350" name="Picture 3"/><wp:cNvGraphicFramePr><a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/></wp:cNvGraphicFramePr><a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="1542179350" name="Picture 1542179350"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="rId8" cstate="print"><a:extLst><a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}"><a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/></a:ext></a:extLst></a:blip><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="3826167" cy="2153339"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p><w:p w14:paraId="367F91C6" w14:textId="14D38089" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="004342CE" w:rsidP="00522259"><w:pPr><w:pBdr><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:between w:val="nil"/></w:pBdr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:spacing w:before="240"/><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="7030A0"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="FF0000"/><w:cs/></w:rPr><w:lastRenderedPageBreak/><w:t xml:space="preserve"> 
+ชื่อ
+องค์กร
+ของท่าน  
+บริษัท สวิซซ์- วัน คอร์ปอเรชั่น จำกัด
+ แผนก/ฝ่าย/ส่วน 
+Technical Training/HR Development/HR
+ 
+&amp;
+ 
+Admin
+<w:tblPr><w:tblStyle w:val="TableGrid"/><w:tblW w:w="9634" w:type="dxa"/><w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/></w:tblPr><w:tblGrid><w:gridCol w:w="1533"/><w:gridCol w:w="2857"/><w:gridCol w:w="2770"/><w:gridCol w:w="2474"/></w:tblGrid><w:tr w:rsidR="001F4C22" w:rsidRPr="00AC1978" w14:paraId="0AE74B9B" w14:textId="77777777" w:rsidTr="009E4706"><w:trPr><w:trHeight w:val="1077"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="7E382558" w14:textId="4D1A2B65" w:rsidR="001F4C22" w:rsidRPr="00AC1978" w:rsidRDefault="001F4C22" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-128"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:cs/></w:rPr><w:t>องค์ประกอบ
+สารสนเทศ
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="4AFD8BD1" w14:textId="53394900" w:rsidR="001F4C22" w:rsidRPr="00AC1978" w:rsidRDefault="009E4706" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:cs/></w:rPr><w:t>กระบวนการทำงานเดิม
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="7BE9ABA9" w14:textId="413ABFCB" w:rsidR="001F4C22" w:rsidRPr="00AC1978" w:rsidRDefault="009E4706" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:cs/></w:rPr><w:t>กระบวนการทำงานเมื่อมีการใช้ระบบสารสนเทศ
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="4E6B7153" w14:textId="29E37014" w:rsidR="001F4C22" w:rsidRPr="00AC1978" w:rsidRDefault="001F4C22" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:cs/></w:rPr><w:t>ประสิทธิภาพ
+                
+ที่คาดว่าจะเพิ่มขึ้น
+<w:trPr><w:trHeight w:val="1077"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="71D1F5A5" w14:textId="77777777" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00522259" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr><w:t>Software
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="1FB3B71C" w14:textId="16CC115C" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ใช้
+ LibreOffice Calc
+ 
+ในการพิมพ์และบันทึกแบบฟอร์ม 
+OJT 
+แยกไฟล์ตามแผนก ทำให้ไม่มีระบบจับคู่แผนการฝึกอบรมกับตำแหน่งงานอัตโนมัติ
+ 
+และเป็นโปรแกรมที่ไม่ค่อยมีผู้อื่นใช้งาน ทำให้เวลาเปิดไฟล์มีความคาดเคลื่อน
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="17159785" w14:textId="3EBC394A" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>พัฒนาหรือนำระบบ
+ HRMS / LMS (Learning Management System) 
+ที่มีโมดูล
+ 
+Auto-OJT Mapping
+ 
+มาใช้ โดยระบบจะดึงหลักสูตร 
+OJT 
+ที่ตรงกับ 
+Job Description 
+และตำแหน่งงานให้อัตโนมัติ
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="28C12550" w14:textId="51F0BE41" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t xml:space="preserve">ความแม่นยำและถูกต้อง 
+100%:
+ 
+ข้อมูลแบบฟอร์ม 
+OJT 
+ตรงกับตำแหน่งงานโดยตรง ลดข้อผิดพลาดจากการเลือกแบบฟอร์มผิดหรือใช้หลักสูตรไม่อัปเดต
+ รวมถึงมีการใช้งานได้งานมากขึ้นหากมีการใช้โปรแกรมเดียวกัน
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr w:rsidR="001F4C22" w:rsidRPr="00AC1978" w14:paraId="1A850B08" w14:textId="77777777" w:rsidTr="009E4706"><w:trPr><w:trHeight w:val="1188"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="01C6A46A" w14:textId="77777777" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00522259" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr><w:t>Hardware
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="2211704F" w14:textId="4FA8521A" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ใช้เครื่องคอมพิวเตอร์ตั้งโต๊ะ (
+PC) 
+ทั่วไป พิมพ์เอกสารลงกระดาษ (
+Paper-based) 
+แล้วส่งให้หัวหน้างานเซ็นอนุมัติด้วยปากกา
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="3A314B90" w14:textId="51D6241E" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ใช้
+ Cloud Server / Web Browser / Tablet 
+เพื่อให้พนักงานและหัวหน้างานเข้าถึงระบบ เซ็นอนุมัติเอกสาร 
+OJT 
+ออนไลน์ผ่าน 
+E-Signature 
+ได้ทุกสถานที่
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="5048F8FE" w14:textId="50C6474D" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ความรวดเร็วและลดต้นทุน:
+ 
+ลดระยะเวลาการอนุมัติจาก 
+3-5 
+วัน เหลือเพียงไม่กี่นาที และลดการใช้กระดาษ (
+Paperless) 
+ลงได้มากกว่า 
+90%
+<w:trPr><w:trHeight w:val="1188"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="7D04F4D0" w14:textId="77777777" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00522259" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr><w:t>Data
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="69A8D048" w14:textId="2FAB81E2" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t xml:space="preserve">ข้อมูลการทำ 
+OJT 
+กระจัดกระจายอยู่ในแฟ้มเอกสารกระดาษและไฟล์
+ 
+PDF 
+ส่วนตัว จัดเก็บแบบ 
+Manual 
+ไม่เป็นศูนย์กลาง
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="67BD629A" w14:textId="5834BF7D" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ข้อมูลถูกจัดเก็บใน
+ Centralized Database (SQL / Cloud) 
+เชื่อมโยงรหัสพนักงาน ตำแหน่งงาน และหลักสูตร 
+OJT 
+เข้าด้วยกันแบบ 
+Real-time
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="14E3054D" w14:textId="3CF75B43" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>ความคุ้มค่าและพร้อมใช้งานของข้อมูล:
+ 
+สามารถดึงรายงานประวัติการฝึกอบรม 
+เมื่อมีทาง 
+Auditor 
+เรียกดูข้อมูลการเรียนงานและทักษะต่างๆของพนักงาน
+และติดตามความก้าวหน้า (
+Tracking)
+ 
+ของพนักงานทุกคนได้ทันทีแบบ 
+Real-time
+<w:trPr><w:trHeight w:val="1188"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="4820C0FE" w14:textId="73A66C90" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00522259" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr><w:t>Process
+es
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="6B119424" w14:textId="12DB226A" w:rsidR="00C8402B" w:rsidRPr="00AC1978" w:rsidRDefault="00C8402B" w:rsidP="00C8402B"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">1. HR 
+สอบถามตำแหน่งงานพนักงานใหม่
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">2. 
+ค้นหาไฟล์ 
+OJT 
+เก่าในเครื่อง
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">3. 
+แก้ไขข้อมูลพนักงาน
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">4. 
+พิมพ์ใส่กระดาษ
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">5. 
+นำเอกสาร
+เดิน
+สอนงานและ
+ส่งอนุมัติ
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">6. 
+จัดเก็บ
+ข้อมูลลงใน 
+LibreOffice Calc
+ 
+,
+สแกนเอกสาร
+เข้าแฟ้ม
+ใน
+ Folder 
+ส่วนตัว และเก็บเอกสาร 
+Paper
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="4CD70B2B" w14:textId="2114A471" w:rsidR="009E4693" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="009E4693"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">1. 
+ระบบดึงข้อมูลพนักงานใหม่จากระบบ 
+HR 
+อัตโนมัติ
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">2. 
+ระบบแมตช์หลักสูตร 
+OJT 
+ตามตำแหน่งทันที
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">3. 
+แจ้งเตือนผ่านระบบ/อีเมลให้หัวหน้างานและพนักงาน
+<w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">4. 
+อนุมัติผ่านระบบออนไลน์
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="6D98F46E" w14:textId="63F8D760" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t>กระบวนการทำงานกระชับ
+:
+ 
+ตัดขั้นตอนที่ซ้ำซ้อนออกไป
+ 
+4-5 
+ขั้นตอน ลดระยะเวลาในการออกเอกสาร
+ 
+OJT 
+ลงได้มากกว่า 
+80%
+<w:trPr><w:trHeight w:val="1188"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="5A6CBD01" w14:textId="77777777" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="00522259" w:rsidP="001F4C22"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-369"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/></w:rPr><w:lastRenderedPageBreak/><w:t>People
+<w:tcPr><w:tcW w:w="2857" w:type="dxa"/></w:tcPr><w:p w14:paraId="27B11650" w14:textId="06C46B0F" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="31"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t xml:space="preserve">HR 
+และหัวหน้างานต้องใช้เวลามากในการตรวจสอบและกรอกข้อมูลเอกสารด้วยตนเอง เสี่ยงต่อความผิดพลาด
+<w:tcPr><w:tcW w:w="2770" w:type="dxa"/></w:tcPr><w:p w14:paraId="39A68F41" w14:textId="3CEE0BE8" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="009E4706"><w:pPr><w:tabs><w:tab w:val="left" w:pos="1701"/><w:tab w:val="left" w:pos="2127"/></w:tabs><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:eastAsia="Sarabun" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t xml:space="preserve">HR 
+เปลี่ยนบทบาทจากการทำเอกสาร (
+Admin) 
+มาเป็นผู้อำนวยการเรียนรู้ (
+Learning Facilitator) 
+พนักงานและหัวหน้างานใช้งานระบบผ่าน 
+Self-Service Interface
+<w:tcPr><w:tcW w:w="2474" w:type="dxa"/></w:tcPr><w:p w14:paraId="34CCB2C4" w14:textId="0A66CE2E" w:rsidR="00522259" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="009E4706"><w:pPr><w:ind w:right="-32"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:color w:val="002060"/><w:sz w:val="28"/><w:szCs w:val="28"/><w:cs/></w:rPr><w:t xml:space="preserve">ยกระดับการทำงานและประสิทธิผล: พนักงานได้รับการฝึกอบรม 
+OJT 
+ตรงตามสายงานทันทีตั้งแต่วันแรกที่เริ่มงาน ส่งผลให้เกิดการทำงานได้อย่างมีประสิทธิภาพเร็วขึ้น (
+Time-to-Productivity)
+3
+. 
+ต
+้
+องการนํากระบวนการ
+บริหารความเสี่ยง
+มาใช
+้
+ในการดําเนินกลยุทธ
+์
+ทางธุรกิจและสารสนเทศในการทํางาน
+ในหน
+่
+วยงา
+นตามกรณีศึกษาที่กำหนดให้ 
+(12 คะแนน)
+กรณีศึกษาของการวิเคราะห์ความเสี่ยง
+บริษัท สยามเทสติ์ฟู้ด จำกัด เป็นผู้ผลิตแกงและอาหารไทยสำเร็จรูปพร้อมทาน ส่งขายซูเปอร์มาร์เก็ตทั่วประเทศ
+ 
+ในปี 256
+9
+ มียอดสั่งซื้อเพิ่มขึ้นมากกว่า 80 เปอร์เซ็นต์ เมื่อยอดสั่งศื้อเพิ่มขึ้น สายการผลิตเผชิญปัญหาความล่าช้าสะสมและส่งมอบสินค้าไม่ตรงตามกำหนดเวลาให้กับลูกค้าหลัก จากการศึกษาพบว่าการบริหารจัดการวัตถุดิบล่าช้าไม่เป็นปัจจุบัน เนื่องจากพนักงานยังคงจดบันทึกสต็อกวัตถุดิบและยอดการสั่งซื้อลงในกระดาษ แล้วนำมาคีย์ลง 
+Excel 
+ในช่วงเย็น ทำให้เกิดภาวะวัตถุดิบขาดแคลนกลางคันโดยไม่รู้ล่วงหน้า ต้องหยุดสายการผลิตชั่วคราวเพื่อรอวัตถุดิบ ทำให้การส่งมอบสินค้าล่าช้ากว่ากำหนดถึง 
+35% 
+ถูกค่าปรับจากห้างสรรพสินค้า และต้นทุนค่าล่วงเวลาพนักงานเพิ่มขึ้น
+<w:t>ให้นักศึกษาวิเคราะห์ข้อมูลในกรณีศึกษาที่ให้มาแล้ว  วิเคราะห์ความเสี่ยงและกำหนดระดับความเสี่ยง
+ลงในตาราง อย่างน้อย 
+2 
+ความเสี่ยง พร้อมกับในระดับของโอกาสที่เกิความเสี่ยงและผลกระทบ พร้อมทั้งให้ระดับความเสี่ยงด้วย
+<w:tblPr><w:tblStyle w:val="TableGrid"/><w:tblW w:w="10060" w:type="dxa"/><w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/></w:tblPr><w:tblGrid><w:gridCol w:w="4110"/><w:gridCol w:w="1998"/><w:gridCol w:w="1642"/><w:gridCol w:w="2310"/></w:tblGrid><w:tr w:rsidR="005A645E" w:rsidRPr="00AC1978" w14:paraId="25BB8276" w14:textId="77777777" w:rsidTr="00F17947"><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="103B498D" w14:textId="57C98C55" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="005A645E"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="1F1F1F"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>ความเสี่ยง+สาเหตุ
+/ปัจจัยเสี่ยง
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="4D8164DD" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="005A645E"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="1F1F1F"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>โอกาสเกิด (
+Likelihood)(1-5)
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="7807466D" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="005A645E"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="1F1F1F"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>ผลกระทบ (
+Impact)(1-5)
+<w:tcPr><w:tcW w:w="2310" w:type="dxa"/><w:hideMark/></w:tcPr><w:p w14:paraId="4A25C320" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="005A645E"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="1F1F1F"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>ระดับความเสี่ยง
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="2588A88F" w14:textId="1C01800A" w:rsidR="001C5971" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>เกิด
+ภาวะวัตถุดิบขาดแคลนกลางคันโดยไม่รู้ล่วงหน้า
+สาเหตุ:
+ 
+การบันทึกข้อมูลสต็อกวัตถุดิบและยอดสั่งซื้อไม่อัปเดตแบบ 
+Real-time 
+เนื่องจากพนักงานจดลงกระดาษแล้วคีย์ลง 
+Excel 
+ในช่วงเย็น
+<w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="06B73890" w14:textId="3CF9B001" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>4
+<w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="3E01B225" w14:textId="51E1FAEB" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="009E4693" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>4
+<w:tcPr><w:tcW w:w="2310" w:type="dxa"/></w:tcPr><w:p w14:paraId="621C1A5E" w14:textId="5F030A51" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>สูงมาก
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="3E7C83EA" w14:textId="5049B70C" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t xml:space="preserve">การส่งมอบสินค้าล่าช้ากว่ากำหนด 
+35% 
+และถูกปรับจากห้างสรรพสินค้า
+สาเหตุ:
+ 
+สายการผลิตเผชิญปัญหาความล่าช้าสะสม เนื่องจากต้องหยุดการผลิตเพื่อรอวัตถุดิบที่ไม่พอ
+<w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="0D202618" w14:textId="0099CD43" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>5
+<w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr><w:p w14:paraId="256222F7" w14:textId="27643DB6" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>5
+<w:tcPr><w:tcW w:w="2310" w:type="dxa"/></w:tcPr><w:p w14:paraId="40E412B4" w14:textId="45BF02E1" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="1F1F1F"/><w:cs/></w:rPr><w:t>สูงมาก
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="02AE7438" w14:textId="5F0AAF5F" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="001C5971" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="EE0000"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>ตัวอย่าง (
+3
+. 
+ต้นทุนการผลิตสูงขึ้น
+ 
+จากค่าล่วงเวลา (
+OT) 
+และค่าปรับ
+)
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="79AD42B6" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/></w:rPr><w:t>4
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:hideMark/></w:tcPr><w:p w14:paraId="06E52D12" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="00F17947"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/></w:rPr><w:t>3
+<w:tcPr><w:tcW w:w="2310" w:type="dxa"/><w:hideMark/></w:tcPr><w:p w14:paraId="20FEB3C7" w14:textId="77777777" w:rsidR="005A645E" w:rsidRPr="00AC1978" w:rsidRDefault="005A645E" w:rsidP="00F17947"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:color w:val="EE0000"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="EE0000"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>สูง (
+Medium-High)
+<w:t>จากตารางที่ดำเนินการเรียบร้อยแล้ว ให้นักศึกษาเลือกความเสี่ยงที่มีนัยสำคัญสูงมา 1 รายการแล้วเสนอวิธีการจัดการความเสี่ยงโดยการใช้ระบบสารสนเทศมาจัดการ เขียนลงในตาราง
+<w:tblPr><w:tblStyle w:val="TableGrid"/><w:tblW w:w="0" w:type="auto"/><w:tblInd w:w="270" w:type="dxa"/><w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/></w:tblPr><w:tblGrid><w:gridCol w:w="2560"/><w:gridCol w:w="4395"/><w:gridCol w:w="2177"/></w:tblGrid><w:tr w:rsidR="001C5971" w:rsidRPr="00AC1978" w14:paraId="77BC0A64" w14:textId="77777777" w:rsidTr="00745C15"><w:tc><w:tcPr><w:tcW w:w="2560" w:type="dxa"/></w:tcPr><w:p w14:paraId="788732B4" w14:textId="367BF507" w:rsidR="001C5971" w:rsidRPr="00AC1978" w:rsidRDefault="001C5971" w:rsidP="00AC1978"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:color w:val="1F1F1F"/><w:bdr w:val="none" w:sz="0" w:space="0" w:color="auto" w:frame="1"/><w:cs/></w:rPr><w:t>ความเสี่ยง+สาเหตุ/ปัจจัยเสี่ยง
+<w:tcPr><w:tcW w:w="4395" w:type="dxa"/></w:tcPr><w:p w14:paraId="75B116B4" w14:textId="5B4C561D" w:rsidR="001C5971" w:rsidRPr="00AC1978" w:rsidRDefault="001C5971" w:rsidP="00AC1978"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>วิธีการจัดการความเสี่ยงโดยการใช้ระบบสารสนเทศมาจัดการ
+ (ระบุชื่อโครงการ/กิจกรรม)
+<w:tcPr><w:tcW w:w="2177" w:type="dxa"/></w:tcPr><w:p w14:paraId="25C0FD24" w14:textId="31FC6B27" w:rsidR="001C5971" w:rsidRPr="00AC1978" w:rsidRDefault="001C5971" w:rsidP="00AC1978"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ผู้รับผิดชอบ/กำหนดแล้วเสร็จ
+<w:tc><w:tcPr><w:tcW w:w="2560" w:type="dxa"/></w:tcPr><w:p w14:paraId="252DD3DA" w14:textId="0AD158E1" w:rsidR="00814466" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00814466"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ความเสี่ยง:
+ 
+การส่งมอบสินค้าล่าช้ากว่ากำหนด 
+35% 
+และถูกปรับจากห้างสรรพสินค้า
+ 
+สาเหตุ/ปัจจัยเสี่ยง:
+ 
+สายการผลิตเผชิญปัญหาความล่าช้าสะสม เนื่องจากต้องหยุดการผลิตเพื่อรอวัตถุดิบที่ไม่พอ ซึ่งเกิดจากการบันทึกสต็อกด้วยกระดาษและ 
+Excel 
+ทำให้ข้อมูลไม่เป็นปัจจุบัน (
+Real-time)
+<w:tcPr><w:tcW w:w="4395" w:type="dxa"/></w:tcPr><w:p w14:paraId="60D0BCA5" w14:textId="4238EAFA" w:rsidR="00814466" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00814466"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ชื่อโครงการ:
+ 
+โครงการพัฒนาระบบบริหารจัดการคลังวัตถุดิบและวางแผนการผลิตแบบเรียลไทม์ (
+Real-time Material &amp; Production Planning System: RM-PPS)
+กิจกรรมในการจัดการความเสี่ยง:
+1. 
+ระบบตัดสต็อกวัตถุดิบแบบ 
+Real-time:
+ 
+เปลี่ยนจากการจดกระดาษมาใช้เครื่องสแกน 
+QR Code/Barcode 
+ยิงบันทึกการรับ-จ่ายวัตถุดิบเข้าสายการผลิตทันที
+ 
+2. 
+ระบบแจ้งเตือนจุดสั่งซื้อวัตถุดิบอัตโนมัติ (
+Automated Re-order Point):
+ 
+ตั้งค่าระบบให้แจ้งเตือนฝ่ายจัดซื้อทันทีเมื่อวัตถุดิบลดลงถึงเกณฑ์ขั้นต่ำ ป้องกันวัตถุดิบขาดแคลนกลางคัน
+ 
+3. 
+ระบบวางแผนความต้องการวัตถุดิบ (
+MRP System):
+ 
+เชื่อมโยงข้อมูลยอดคำสั่งซื้อสินค้าจากลูกค้าเข้ากับแผนการผลิต เพื่อคำนวณและสั่งซื้อวัตถุดิบล่วงหน้าให้เพียงพอกระบวนการผลิต
+ 
+<w:tcPr><w:tcW w:w="2177" w:type="dxa"/></w:tcPr><w:p w14:paraId="3BB9B26B" w14:textId="20A943E3" w:rsidR="00814466" w:rsidRPr="00AC1978" w:rsidRDefault="00814466" w:rsidP="00814466"><w:pPr><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/></w:rPr></w:pPr><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:b/><w:bCs/><w:cs/></w:rPr><w:t>ผู้รับผิดชอบ:
+ฝ่ายเทคโนโลยีสารสนเทศ (
+IT) 
+ร่วมกับ ฝ่ายคลังสินค้าและฝ่ายวางแผนการผลิต
+ 
+กำหนดแล้วเสร็จ:
+30 
+พฤศจิกายน 
+2569 (
+ระยะเวลาดำเนินโครงการ 
+3 
+เดือน)
+ 
+4. 
+ จากการวิเคราะห์ความเสี่ยงในองค์กรของท่านที่ได้ทำมาในห้องเรียน ให้ตอบคำถามต้อไปนี้ (12 คะแนน)
+</w:r><w:r w:rsidR="00A6743C" w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/><w:cs/></w:rPr><w:t>4.1 รายการความเสี่ยงที่มีนัยสำคัญสูงสุด (1 คะแนน)
+ตอบ
+ 
+ทักษะการสอนงานของผู้สอนไม่สามารถสื่อสารให้พนักงานได้รับข้อมูลได้อย่างถูกต้องตาม 
+WI 
+ที่อ้างอิงเนื่องจากคุ้นชินกับการทำงานที่ตนเองเคยทำ
+<w:t>4.2  ชื่อระบบสารสนเทศที่ต้องการพัฒนาเพื่อจัดการความเสี่ยง (2 คะแนน)
+ตอบ
+ 
+ระบบสนับสนุนการสอนงานและตรวจสอบมาตรฐานหน้างาน
+</w:r><w:r w:rsidRPr="00AC1978"><w:rPr><w:rFonts w:ascii="TH SarabunPSK" w:hAnsi="TH SarabunPSK" w:cs="TH SarabunPSK"/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr><w:t>4.
+3
+ 
+รายการความสามารถ/ฟังก์ชั่นของระบบที่ควรจะมี
+/ทำได้
+ (4 คะแนน)
+ตอบ
+  
+ความต้องการเชิงฟังก์ชัน
+ระบบต้องแปลงเอกสาร 
+WI 
+เป็นลำดับขั้นตอนการสอนแบบ 
+Interactive 
+ที่บังคับให้ผู้สอนกดผ่านทีละขั้น และแสดงจุดวิกฤต (
+Critical Control Points) 
+บนหน้าจอ
+ระบบต้องรองรับการอัปโหลดคลิปวิดีโอ/บันทึกเสียงการสาธิตงานในขั้นตอนสำคัญเพื่อใช้ยืนยันการสอน
+ระบบต้องมีระบบ 
+AI 
+ช่วยตรวจจับคำสำคัญ (
+Keywords) 
+จากเสียงผู้สอน และตรวจเช็กท่าทางการทำงานจากคลิปเพื่อยืนยันว่าสอนตรงตามมาตรฐาน
+ระบบต้องส่งแบบประเมินการสอนย้อนกลับไปยังแอปพลิเคชันของผู้เรียนทันทีหลังจบการสอน
+ระบบต้องสรุปคะแนนความถูกต้องในการสอนงาน (
+WI Compliance Rate) 
+และส่งสัญญาณแจ้งเตือน (
+Alert) 
+เมื่อพบผู้สอนที่มีแนวโน้มสอนเบี่ยงเบนจากมาตรฐาน
+<w:t>4.
+4
+  Context Diagram
+ ของระบบที่จะพัฒนาขึ้น
+ (5 คะแนน)
+ตอบ

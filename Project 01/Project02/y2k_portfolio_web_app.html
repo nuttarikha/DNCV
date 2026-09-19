@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="th" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuttarikha Anunjunya - Y2K Personal Portfolio System</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Space Grotesk, Syne, VT323 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Syne:wght@700;800&family=VT323&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js for Performance Dashboard -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cosmic: '#18002e',
+                        hotpink: '#ff71ce',
+                        cyancolor: '#01cdfe',
+                        neongreen: '#05ffa1',
+                        cyberyellow: '#fffb96',
+                        y2kdark: '#0c0019',
+                    },
+                    fontFamily: {
+                        space: ['"Space Grotesk"', 'sans-serif'],
+                        syne: ['Syne', 'sans-serif'],
+                        pixel: ['VT323', 'monospace'],
+                        prompt: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #18002e;
+            color: #ffffff;
+            font-family: 'Prompt', 'Space Grotesk', sans-serif;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(255, 113, 206, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(1, 205, 254, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(5, 255, 161, 0.1) 0%, transparent 60%),
+                linear-gradient(0deg, rgba(24, 0, 46, 0.9) 0%, rgba(12, 0, 25, 0.95) 100%),
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 113, 206, 0.03) 3px, transparent 4px);
+            background-attachment: fixed;
+        }
+
+        /* Y2K Glowing Borders */
+        .neon-border-pink {
+            border: 2px solid #ff71ce;
+            box-shadow: 0 0 12px #ff71ce, inset 0 0 6px rgba(255, 113, 206, 0.5);
+        }
+
+        .neon-border-cyan {
+            border: 2px solid #01cdfe;
+            box-shadow: 0 0 12px #01cdfe, inset 0 0 6px rgba(1, 205, 254, 0.5);
+        }
+
+        .neon-border-green {
+            border: 2px solid #05ffa1;
+            box-shadow: 0 0 12px #05ffa1, inset 0 0 6px rgba(5, 255, 161, 0.5);
+        }
+
+        .neon-border-yellow {
+            border: 2px solid #fffb96;
+            box-shadow: 0 0 12px #fffb96, inset 0 0 6px rgba(255, 251, 150, 0.5);
+        }
+
+        /* Chrome Metallic Text Gradient */
+        .chrome-text {
+            background: linear-gradient(180deg, #ffffff 0%, #d8e5ff 30%, #7caaff 50%, #ffffff 52%, #ff71ce 75%, #01cdfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+        }
+
+        .pink-glow-text {
+            color: #ff71ce;
+            text-shadow: 0 0 8px #ff71ce, 0 0 20px rgba(255, 113, 206, 0.6);
+        }
+
+        .cyan-glow-text {
+            color: #01cdfe;
+            text-shadow: 0 0 8px #01cdfe, 0 0 20px rgba(1, 205, 254, 0.6);
+        }
+
+        /* Y2K Bubble Capsule Buttons */
+        .bubble-btn {
+            background: linear-gradient(180deg, #ff9be2 0%, #ff71ce 40%, #c42da5 100%);
+            border: 2px solid #ffffff;
+            border-radius: 9999px;
+            box-shadow: 0 4px 15px rgba(255, 113, 206, 0.6), inset 0 2px 4px rgba(255,255,255,0.8);
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .bubble-btn:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 6px 20px rgba(255, 113, 206, 0.8), inset 0 3px 6px rgba(255,255,255,0.9);
+        }
+
+        .bubble-btn-cyan {
+            background: linear-gradient(180deg, #81f0ff 0%, #01cdfe 40%, #0087b3 100%);
+            border: 2px solid #ffffff;
+            border-radius: 9999px;
+            box-shadow: 0 4px 15px rgba(1, 205, 254, 0.6), inset 0 2px 4px rgba(255,255,255,0.8);
+            transition: all 0.2s ease;
+        }
+
+        .bubble-btn-cyan:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 6px 20px rgba(1, 205, 254, 0.8);
+        }
+
+        /* Y2K Retro Window Frame */
+        .y2k-window {
+            background: rgba(24, 0, 46, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            border: 2px solid #01cdfe;
+            box-shadow: 0 0 20px rgba(1, 205, 254, 0.3), inset 0 0 15px rgba(255, 113, 206, 0.15);
+        }
+
+        .y2k-window-header {
+            background: linear-gradient(90deg, #ff71ce 0%, #a200ff 50%, #01cdfe 100%);
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Iridescent Card Finish */
+        .iridescent-card {
+            background: linear-gradient(135deg, rgba(255, 113, 206, 0.12) 0%, rgba(1, 205, 254, 0.12) 50%, rgba(5, 255, 161, 0.12) 100%);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .iridescent-card:hover {
+            border-color: #ff71ce;
+            box-shadow: 0 0 15px rgba(255, 113, 206, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #18002e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff71ce;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #01cdfe;
+        }
+
+        /* Marquee Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 18s linear infinite;
+        }
+
+        /* Pulse glow animation */
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; filter: drop-shadow(0 0 8px #ff71ce); }
+            50% { opacity: 0.7; filter: drop-shadow(0 0 18px #01cdfe); }
+        }
+        .glow-pulse {
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-hotpink selection:text-black">
+
+    <!-- SPLASH SCREEN (Shown only on first load / refresh) -->
+    <div id="splashScreen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-y2kdark p-4 transition-opacity duration-700">
+        <!-- Floating Y2K Background Ornaments -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-10 left-10 w-48 h-48 rounded-full bg-hotpink/20 blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-cyancolor/20 blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-neongreen/10 blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-lg w-full bg-cosmic/90 border-2 border-hotpink rounded-2xl p-6 sm:p-8 text-center neon-border-pink shadow-2xl">
+            <!-- Window Bar -->
+            <div class="flex items-center justify-between border-b border-hotpink/40 pb-3 mb-6">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500 inline-block shadow"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-400 inline-block shadow"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-400 inline-block shadow"></span>
+                    <span class="font-pixel text-cyancolor text-sm ml-2">SYSTEM_BOOT_V2000.EXE</span>
+                </div>
+                <i class="fa-solid fa-compact-disc text-hotpink text-lg animate-spin" style="animation-duration: 4s;"></i>
+            </div>
+
+            <!-- Avatar Preview in Splash -->
+            <div class="relative w-32 h-32 mx-auto mb-4 rounded-full border-4 border-cyancolor p-1 neon-border-cyan overflow-hidden bg-black/40">
+                <img src="S__11018250_0.jpg" alt="ณัฐริกา อนันต์จรรยา" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/300x300/18002e/ff71ce?text=Nuttarikha';">
+            </div>
+
+            <h1 class="font-syne text-2xl sm:text-3xl font-extrabold chrome-text tracking-wide mb-1">
+                NUTTARIKHA ANUNJUNYA
+            </h1>
+            <p class="text-neongreen font-pixel text-xl tracking-wider mb-4">
+                [ SENIOR TRAINING & HRD SPECIALIST ]
+            </p>
+
+            <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                ยินดีต้อนรับสู่ระบบรายงานผลงานส่วนบุคคล<br>
+                บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (กลุ่มบริษัท สโตน)
+            </p>
+
+            <!-- Loading Progress Bar -->
+            <div class="w-full bg-black/60 rounded-full h-4 p-0.5 border border-cyancolor mb-4">
+                <div id="splashProgress" class="bg-gradient-to-r from-hotpink via-cyancolor to-neongreen h-full rounded-full transition-all duration-300" style="w-0%"></div>
+            </div>
+            
+            <div id="splashStatus" class="font-pixel text-cyberyellow text-sm mb-6 h-5">
+                INITIALIZING CORE MODULES...
+            </div>
+
+            <button onclick="dismissSplash()" class="bubble-btn text-white font-bold py-2.5 px-8 text-base shadow-lg cursor-pointer flex items-center justify-center mx-auto space-x-2">
+                <span>ENTER PORTFOLIO SYSTEM</span>
+                <i class="fa-solid fa-bolt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TOP HEADER BAR -->
+    <header class="sticky top-0 z-40 bg-cosmic/90 backdrop-blur-md border-b-2 border-hotpink/60">
+        <!-- Pixel Marquee Banner -->
+        <div class="bg-gradient-to-r from-hotpink via-purple-800 to-cyancolor text-black font-pixel text-sm py-1 overflow-hidden shadow-md">
+            <div class="animate-marquee whitespace-nowrap font-bold tracking-widest text-white">
+                ✦ WELCOME TO NUTTARIKHA ANUNJUNYA'S Y2K PORTFOLIO ✦ SENIOR TRAINING OFFICER ✦ KMUTNB S-MBR ✦ HRD & TRAINING CORE SYSTEM ✦ SILPAKORN UNIVERSITY SECOND-CLASS HONORS ✦ ISO 9001/14001/45001 AUDITOR ✦ 
+                ✦ WELCOME TO NUTTARIKHA ANUNJUNYA'S Y2K PORTFOLIO ✦ SENIOR TRAINING OFFICER ✦ KMUTNB S-MBR ✦ HRD & TRAINING CORE SYSTEM ✦ SILPAKORN UNIVERSITY SECOND-CLASS HONORS ✦ ISO 9001/14001/45001 AUDITOR ✦ 
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+            <!-- Brand Logo / Name -->
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('dashboard')">
+                <div class="w-11 h-11 rounded-full border-2 border-cyancolor p-0.5 neon-border-cyan overflow-hidden bg-black/30">
+                    <img src="S__11018250_0.jpg" alt="Profile" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.src='https://placehold.co/100x100/18002e/ff71ce?text=NA';">
+                </div>
+                <div>
+                    <h1 class="font-syne font-extrabold text-lg sm:text-xl chrome-text tracking-wider leading-none">
+                        NUTTARIKHA.SYS
+                    </h1>
+                    <span class="text-xs text-neongreen font-pixel tracking-widest">
+                        N. ANUNJUNYA (DONUT)
+                    </span>
+                </div>
+            </div>
+
+            <!-- Quick Status Badge -->
+            <div class="hidden md:flex items-center space-x-2 bg-black/50 border border-neongreen/50 px-3 py-1 rounded-full text-xs text-neongreen font-pixel">
+                <span class="w-2.5 h-2.5 rounded-full bg-neongreen animate-ping"></span>
+                <span>STATUS: ACTIVE SENIOR TRAINING OFFICER @ SWIZZ-ONE</span>
+            </div>
+
+            <!-- Interactive Music / Sound Effect Simulator -->
+            <button id="soundToggleBtn" onclick="toggleRetroSound()" class="px-3 py-1.5 rounded-full border border-cyancolor text-cyancolor text-xs font-bold hover:bg-cyancolor/20 transition flex items-center space-x-2">
+                <i class="fa-solid fa-volume-high" id="soundIcon"></i>
+                <span id="soundText">Y2K SOUND: ON</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR (Y2K Bubble Pill Menu) -->
+    <nav class="max-w-7xl mx-auto px-4 mt-4 w-full">
+        <div class="flex items-center justify-start sm:justify-center overflow-x-auto gap-2 py-2 no-scrollbar scroll-smooth">
+            <button onclick="switchTab('education')" id="nav-education" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>1. ประวัติการศึกษา</span>
+            </button>
+            <button onclick="switchTab('contact')" id="nav-contact" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-address-book"></i>
+                <span>2. สถานที่ติดต่อ</span>
+            </button>
+            <button onclick="switchTab('outstanding')" id="nav-outstanding" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-trophy"></i>
+                <span>3. ผลงานโดดเด่น</span>
+            </button>
+            <button onclick="switchTab('academic')" id="nav-academic" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>4. ผลงานวิชาการ</span>
+            </button>
+            <button onclick="switchTab('research')" id="nav-research" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>5. ผลงานบทความวิจัย</span>
+            </button>
+            <button onclick="switchTab('speaker')" id="nav-speaker" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>6. งานวิทยากร</span>
+            </button>
+            <button onclick="switchTab('dashboard')" id="nav-dashboard" class="nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>7. Dashboard รายงานผลงาน</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full">
+
+        <!-- ==================== TAB 1: ประวัติการศึกษา (EDUCATION) ==================== -->
+        <section id="tab-education" class="tab-content hidden space-y-6">
+            <!-- Retro Window Header -->
+            <div class="y2k-window neon-border-cyan overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_01 // EDUCATION_TIMELINE.EXE</span>
+                    <div class="flex space-x-1">
+                        <span class="w-3 h-3 rounded-full bg-yellow-300 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-300 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span>
+                    </div>
+                </div>
+
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                        <!-- Profile Card -->
+                        <div class="iridescent-card p-5 rounded-2xl neon-border-pink text-center space-y-3">
+                            <div class="w-40 h-40 mx-auto rounded-xl border-2 border-hotpink p-1 neon-border-pink overflow-hidden shadow-lg bg-black/40">
+                                <img src="S__11018250_0.jpg" alt="ณัฐริกา อนันต์จรรยา" class="w-full h-full object-cover rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/400x400/18002e/ff71ce?text=Nuttarikha';">
+                            </div>
+                            <h3 class="font-syne text-xl font-bold pink-glow-text">ณัฐริกา อนันต์จรรยา</h3>
+                            <p class="text-sm text-gray-300">ชื่อเล่น: นัท (โดนัท)</p>
+                            <div class="inline-block bg-hotpink/20 border border-hotpink text-hotpink text-xs px-3 py-1 rounded-full font-pixel">
+                                KMUTNB S-MBR #17
+                            </div>
+                        </div>
+
+                        <!-- Education Timeline Cards -->
+                        <div class="md:col-span-2 space-y-4">
+                            <!-- Master Degree -->
+                            <div class="iridescent-card p-5 rounded-xl border-l-4 border-l-cyancolor hover:bg-white/5 transition">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <span class="text-xs font-pixel text-cyancolor bg-cyancolor/10 border border-cyancolor px-2 py-0.5 rounded">ปัจจุบัน / กำลังศึกษา</span>
+                                        <h4 class="text-lg font-bold text-white mt-1">ระดับปริญญาโท - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</h4>
+                                        <p class="text-sm text-neongreen font-semibold">โครงการบริหารธุรกิจมหาบัณฑิต (S-MBR)</p>
+                                        <p class="text-xs text-gray-300 mt-2">
+                                            เน้นการบริหารจัดการองค์กรเชิงนวัตกรรม การพัฒนาทรัพยากรมนุษย์ยุคดิจิทัล และกลยุทธ์การฝึกอบรม
+                                        </p>
+                                    </div>
+                                    <div class="text-3xl text-cyancolor">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bachelor Degree -->
+                            <div class="iridescent-card p-5 rounded-xl border-l-4 border-l-hotpink hover:bg-white/5 transition">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <span class="text-xs font-pixel text-hotpink bg-hotpink/10 border border-hotpink px-2 py-0.5 rounded">สำเร็จการศึกษา ปี 2562</span>
+                                        <h4 class="text-lg font-bold text-white mt-1">ระดับปริญญาตรี - มหาวิทยาลัยศิลปากร วิทยาเขตสารสนเทศเพชรบุรี</h4>
+                                        <p class="text-sm text-cyberyellow font-semibold">ปริญญาบริหารธุรกิจบัณฑิต (บธ.บ.) คณะวิทยาการจัดการ สาขาธุรกิจทั่วไป เอกการเงิน</p>
+                                        <div class="mt-2 flex flex-wrap gap-2 items-center">
+                                            <span class="bg-neongreen/20 text-neongreen border border-neongreen text-xs px-2.5 py-0.5 rounded-full font-bold">
+                                                เกียรตินิยมอันดับ 2 (GPA 3.40)
+                                            </span>
+                                            <span class="text-xs text-gray-300">หน่วยกิตสะสม 143 หน่วยกิต</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-3xl text-hotpink">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- High School -->
+                            <div class="iridescent-card p-5 rounded-xl border-l-4 border-l-neongreen hover:bg-white/5 transition">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <span class="text-xs font-pixel text-neongreen bg-neongreen/10 border border-neongreen px-2 py-0.5 rounded">2556 - 2558</span>
+                                        <h4 class="text-lg font-bold text-white mt-1">ระดับมัธยมศึกษาตอนปลาย - โรงเรียนคงทองวิทยา</h4>
+                                        <p class="text-xs text-gray-300 mt-1">จังหวัดนครปฐม | สำเร็จการศึกษาปี พ.ศ. 2558</p>
+                                    </div>
+                                    <div class="text-3xl text-neongreen">
+                                        <i class="fa-solid fa-school"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 2: สถานที่ติดต่อ (CONTACT) ==================== -->
+        <section id="tab-contact" class="tab-content hidden space-y-6">
+            <div class="y2k-window neon-border-pink overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_02 // CONTACT_LOCATION.EXE</span>
+                    <i class="fa-solid fa-location-dot text-cyberyellow"></i>
+                </div>
+
+                <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Personal Info & Cards -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold chrome-text mb-4">ข้อมูลการติดต่อ & ที่อยู่</h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Phone -->
+                            <div class="iridescent-card p-4 rounded-xl border border-cyancolor flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-cyancolor/20 flex items-center justify-center text-cyancolor text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">เบอร์โทรศัพท์</p>
+                                    <p class="font-bold text-white font-pixel text-lg">087-716-2468</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="iridescent-card p-4 rounded-xl border border-hotpink flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-hotpink/20 flex items-center justify-center text-hotpink text-xl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">อีเมล (KMUTNB)</p>
+                                    <p class="font-bold text-white text-xs truncate max-w-[170px]" title="s6916011856072@email.kmutnb.ac.th">
+                                        s6916011856072@email.kmutnb.ac.th
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Line -->
+                            <div class="iridescent-card p-4 rounded-xl border border-neongreen flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-neongreen/20 flex items-center justify-center text-neongreen text-xl">
+                                    <i class="fa-brands fa-line"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">Line ID</p>
+                                    <p class="font-bold text-white font-pixel text-lg">dn_ntrk</p>
+                                </div>
+                            </div>
+
+                            <!-- Birthday -->
+                            <div class="iridescent-card p-4 rounded-xl border border-cyberyellow flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-cyberyellow/20 flex items-center justify-center text-cyberyellow text-xl">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">วันเกิด / อายุ</p>
+                                    <p class="font-bold text-white text-sm">26 มีนาคม 2540 (29 ปี)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address Box -->
+                        <div class="iridescent-card p-5 rounded-xl border border-white/20 space-y-2">
+                            <div class="flex items-center space-x-2 text-hotpink font-bold">
+                                <i class="fa-solid fa-house-chimney"></i>
+                                <span>ที่อยู่ตามทะเบียนบ้าน / ติดต่อ</span>
+                            </div>
+                            <p class="text-sm text-gray-200 leading-relaxed">
+                                83 หมู่ 10 ตำบลบางปลา อำเภอบางเลน จังหวัดนครปฐม 73130
+                            </p>
+                        </div>
+
+                        <!-- Interactive Contact Form -->
+                        <div class="iridescent-card p-5 rounded-xl border border-cyancolor/40 space-y-3">
+                            <h4 class="font-bold text-cyancolor flex items-center space-x-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>ฝากข้อความติดต่อ</span>
+                            </h4>
+                            <div class="space-y-2 text-xs">
+                                <input type="text" id="contactName" placeholder="ชื่อผู้ติดต่อ" class="w-full bg-black/60 border border-gray-600 rounded px-3 py-2 text-white focus:border-cyancolor outline-none">
+                                <input type="email" id="contactEmail" placeholder="อีเมลของคุณ" class="w-full bg-black/60 border border-gray-600 rounded px-3 py-2 text-white focus:border-cyancolor outline-none">
+                                <textarea id="contactMsg" rows="3" placeholder="ข้อความที่ต้องการติดต่อ..." class="w-full bg-black/60 border border-gray-600 rounded px-3 py-2 text-white focus:border-cyancolor outline-none"></textarea>
+                                <button onclick="handleContactSubmit()" class="bubble-btn-cyan w-full text-black font-bold py-2 rounded-full shadow">
+                                    ส่งข้อความ (SEND MESSAGE)
+                                </button>
+                                <div id="contactNotice" class="hidden text-center text-neongreen font-pixel text-sm mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map & Location Visualizer -->
+                    <div class="space-y-4 flex flex-col justify-between">
+                        <div class="y2k-window border border-neongreen overflow-hidden flex-grow flex flex-col">
+                            <div class="bg-black/60 px-4 py-2 border-b border-neongreen/40 flex items-center justify-between text-xs">
+                                <span class="text-neongreen font-pixel">MAP_VIEWER_BANG_LEN.GPS</span>
+                                <span class="text-gray-400">Nakhon Pathom, Thailand</span>
+                            </div>
+                            <!-- Embed Google Maps iframe for Bang Len, Nakhon Pathom -->
+                            <div class="w-full h-80 min-h-[300px] bg-black/40 relative">
+                                <iframe 
+                                    class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500"
+                                    src="https://maps.google.com/maps?q=Bang%20Pla,%20Bang%20Len,%20Nakhon%20Pathom&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Organization Location Info -->
+                        <div class="iridescent-card p-4 rounded-xl border border-cyberyellow text-xs space-y-1">
+                            <div class="font-bold text-cyberyellow flex items-center space-x-2">
+                                <i class="fa-solid fa-building text-sm"></i>
+                                <span>สถานที่ทำงานปัจจุบัน</span>
+                            </div>
+                            <p class="text-gray-200">
+                                <strong>บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด</strong> (กลุ่มบริษัท สโตน - Deestone Group)
+                            </p>
+                            <p class="text-gray-400">ตำแหน่ง: เจ้าหน้าที่ฝึกอบรมอาวุธโส (Senior Training Officer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 3: ผลงานโดดเด่น (OUTSTANDING ACHIEVEMENTS) ==================== -->
+        <section id="tab-outstanding" class="tab-content hidden space-y-6">
+            <div class="y2k-window neon-border-green overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_03 // OUTSTANDING_ACHIEVEMENTS.EXE</span>
+                    <i class="fa-solid fa-award text-cyberyellow"></i>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <!-- Highlights Banner -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="iridescent-card p-4 rounded-xl border border-hotpink text-center space-y-2">
+                            <div class="text-3xl text-hotpink"><i class="fa-solid fa-crown"></i></div>
+                            <h4 class="font-bold text-white text-lg">พนักงานดีเด่น 5 สมัย</h4>
+                            <p class="text-xs text-gray-300">ได้รับรางวัลพนักงานดีเด่น ประจำปี 2563, 2563-2564, 2566, 2566-2567, 2566-2568</p>
+                        </div>
+
+                        <div class="iridescent-card p-4 rounded-xl border border-cyancolor text-center space-y-2">
+                            <div class="text-3xl text-cyancolor"><i class="fa-solid fa-user-ninja"></i></div>
+                            <h4 class="font-bold text-white text-lg">วิทยากรต้นแบบ 2568</h4>
+                            <p class="text-xs text-gray-300">ผ่านหลักสูตรพัฒนาวิทยากรต้นแบบ จากกรมพัฒนาฝีมือแรงงาน กระทรวงแรงงาน</p>
+                        </div>
+
+                        <div class="iridescent-card p-4 rounded-xl border border-neongreen text-center space-y-2">
+                            <div class="text-3xl text-neongreen"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h4 class="font-bold text-white text-lg">Certified Internal Auditor</h4>
+                            <p class="text-xs text-gray-300">รับรองมาตรฐาน ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 (Sep 2025)</p>
+                        </div>
+                    </div>
+
+                    <!-- Work Experience & Achievements Detailed Timeline -->
+                    <h3 class="text-xl font-bold chrome-text border-b border-gray-700 pb-2">
+                        <i class="fa-solid fa-briefcase text-cyancolor mr-2"></i>ประสบการณ์ทำงานและผลงานโดดเด่น
+                    </h3>
+
+                    <div class="space-y-4">
+                        <!-- Swizz-One Senior Training -->
+                        <div class="iridescent-card p-6 rounded-2xl border-l-4 border-l-hotpink neon-border-pink">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                                <div>
+                                    <span class="bg-hotpink/20 text-hotpink font-pixel text-xs px-2.5 py-1 rounded border border-hotpink">
+                                        ก.ย. 2019 - ปัจจุบัน
+                                    </span>
+                                    <h4 class="text-xl font-bold text-white mt-1">เจ้าหน้าที่ฝึกอบรมอาวุธโส (Senior Training Officer)</h4>
+                                    <p class="text-sm text-cyancolor">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (กลุ่มบริษัท สโตน - Deestone Group)</p>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xs text-neongreen font-pixel bg-black/40 px-3 py-1 rounded-full border border-neongreen">
+                                        End-to-End HRD Process
+                                    </span>
+                                </div>
+                            </div>
+
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-200 mt-4">
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>TNA & IDP:</strong> วิเคราะห์ความต้องการฝึกอบรมและจัดทำแผนพัฒนาสมรรถนะรายบุคคล</span>
+                                </li>
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>วิทยากร Soft Skills:</strong> บรรยายหลักสูตรเทคนิคการรับคำสั่ง การมอบหมายงาน และการนำไปปฏิบัติ</span>
+                                </li>
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>Digital Learning:</strong> พัฒนาสื่อการสอน E-Learning, Microlearning และ Learning Video</span>
+                                </li>
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>Coach & Mentor:</strong> โค้ชและเป็นพี่เลี้ยงให้วิทยากรภายใน พัฒนาทักษะการสอน</span>
+                                </li>
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>Compliance:</strong> ติดต่อสถาบันพัฒนาฝีมือแรงงาน เป็นไปตามมาตรฐานกฎหมาย</span>
+                                </li>
+                                <li class="flex items-start space-x-2 bg-black/30 p-2.5 rounded-lg border border-gray-800">
+                                    <i class="fa-solid fa-check text-neongreen mt-1"></i>
+                                    <span><strong>RCA & Problem Solving:</strong> ออกแบบหลักสูตรแก้ปัญหาหน้างานด้วยเทคนิค RCA</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Pioneer Engineering -->
+                        <div class="iridescent-card p-5 rounded-xl border-l-4 border-l-cyancolor">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                <div>
+                                    <span class="bg-cyancolor/20 text-cyancolor font-pixel text-xs px-2.5 py-0.5 rounded border border-cyancolor">
+                                        มิ.ย. 2019 - ก.ย. 2019
+                                    </span>
+                                    <h4 class="text-lg font-bold text-white mt-1">เจ้าหน้าที่บัญชี (Accounting Officer)</h4>
+                                    <p class="text-xs text-gray-300">บริษัท ไพโอเนียร์ เอ็นจิเนียริ่ง อินเตอร์เนชั่นแนล จำกัด</p>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-300 mt-2">
+                                บันทึกและตรวจสอบรายการบัญชีประจำวันในระบบ ERP, ออกใบแจ้งหนี้ ติดตามลูกหนี้การค้า, ตรวจสอบใบสำคัญจ่าย และดูแลเอกสารฝ่ายขาย
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 4: ผลงานวิชาการ (ACADEMIC) ==================== -->
+        <section id="tab-academic" class="tab-content hidden space-y-6">
+            <div class="y2k-window neon-border-yellow overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_04 // ACADEMIC_PROJECTS_TRANSCRIPT.EXE</span>
+                    <i class="fa-solid fa-graduation-cap text-cyberyellow"></i>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <!-- Academic Honors Card -->
+                    <div class="iridescent-card p-6 rounded-2xl border border-cyberyellow flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="space-y-2 text-center md:text-left">
+                            <span class="bg-cyberyellow text-black font-bold text-xs px-3 py-1 rounded-full uppercase font-pixel">
+                                HIGHEST ACADEMIC HONOR
+                            </span>
+                            <h3 class="text-2xl font-extrabold text-white">ปริญญาบริหารธุรกิจบัณฑิต (เกียรตินิยมอันดับ 2)</h3>
+                            <p class="text-sm text-gray-300">
+                                สาขาธุรกิจทั่วไป เอกการเงิน คณะวิทยาการจัดการ มหาวิทยาลัยศิลปากร (GPA 3.40)
+                            </p>
+                        </div>
+                        <div class="bg-black/60 p-4 rounded-xl border border-cyberyellow/50 text-center min-w-[160px]">
+                            <span class="text-3xl font-bold font-pixel text-cyberyellow">3.40 GPA</span>
+                            <p class="text-xs text-gray-400">143 Credits Completed</p>
+                        </div>
+                    </div>
+
+                    <!-- Transcript Summary Table -->
+                    <div class="y2k-window border border-gray-700 p-4 rounded-xl space-y-3">
+                        <h4 class="font-bold text-neongreen flex items-center space-x-2">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>สรุปผลการเรียนวิชาเด่น (Key Academic Highlights)</span>
+                        </h4>
+
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs text-gray-200">
+                                <thead class="bg-black/60 text-cyancolor font-pixel text-sm uppercase">
+                                    <tr>
+                                        <th class="p-2 border-b border-gray-700">รหัสวิชา</th>
+                                        <th class="p-2 border-b border-gray-700">ชื่อรายวิชา (Subject Name)</th>
+                                        <th class="p-2 border-b border-gray-700">หน่วยกิต</th>
+                                        <th class="p-2 border-b border-gray-700 text-center">เกรด (Grade)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800">
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761401</td>
+                                        <td class="p-2 font-medium">ภาวะผู้นำ (Leadership)</td>
+                                        <td class="p-2">3</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761402</td>
+                                        <td class="p-2 font-medium">การจัดการเชิงกลยุทธ์ (Strategic Management)</td>
+                                        <td class="p-2">3</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761403</td>
+                                        <td class="p-2 font-medium">ความรับผิดชอบสังคมของกิจการ (CSR)</td>
+                                        <td class="p-2">3</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761414</td>
+                                        <td class="p-2 font-medium">จุลนิพนธ์ (Senior Research Project)</td>
+                                        <td class="p-2">2</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761301</td>
+                                        <td class="p-2 font-medium">ระบบสารสนเทศเพื่อการจัดการ (MIS)</td>
+                                        <td class="p-2">3</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                    <tr class="hover:bg-white/5">
+                                        <td class="p-2 font-pixel text-hotpink">761201</td>
+                                        <td class="p-2 font-medium">องค์การและการจัดการ (Organization & Management)</td>
+                                        <td class="p-2">3</td>
+                                        <td class="p-2 text-center font-bold text-neongreen">A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 5: ผลงานบทความวิจัย (RESEARCH) ==================== -->
+        <section id="tab-research" class="tab-content hidden space-y-6">
+            <div class="y2k-window neon-border-pink overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_05 // RESEARCH_PUBLICATIONS.EXE</span>
+                    <i class="fa-solid fa-newspaper text-cyancolor"></i>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <div class="text-center max-w-2xl mx-auto space-y-2">
+                        <h3 class="text-2xl font-bold chrome-text">ผลงานวิจัยและการตีพิมพ์</h3>
+                        <p class="text-xs text-gray-300">
+                            การศึกษาพฤติกรรมผู้บริโภค กลยุทธ์การสร้างแบรนด์ และการนำเสนอผลงานวิจัยในประชุมวิชาการระดับชาติ
+                        </p>
+                    </div>
+
+                    <!-- Research Paper Cards Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Research Paper 1 -->
+                        <div class="iridescent-card p-6 rounded-2xl border border-hotpink space-y-3 relative overflow-hidden flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <span class="bg-hotpink/20 text-hotpink text-xs px-3 py-1 rounded-full font-pixel border border-hotpink inline-block">
+                                    งานวิจัยระดับปริญญาตรี (ปี 3)
+                                </span>
+                                <h4 class="text-lg font-bold text-white leading-snug">
+                                    "การศึกษาพฤติกรรมและปัจจัยที่ส่งผลต่อการซื้อเครื่องสำอางเกาหลีประเภทผลิตภัณฑ์ตกแต่งใบหน้าผ่านเครือข่ายสังคมออนไลน์"
+                                </h4>
+                                <p class="text-xs text-gray-300 leading-relaxed">
+                                    <strong>จุดน่าสนใจของวิจัย:</strong> การเติบโตของการสั่งซื้อสินค้าออนไลน์ในปี พ.ศ. 2560 และการใช้สื่อสินค้าออนไลน์ร่วมกับความสนใจด้านผลิตภัณฑ์ตกแต่งใบหน้า
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-gray-700 flex items-center justify-between text-xs">
+                                <span class="text-neongreen font-pixel">CONSUMER BEHAVIOR RESEARCH</span>
+                                <i class="fa-solid fa-chart-line text-hotpink text-lg"></i>
+                            </div>
+                        </div>
+
+                        <!-- Research Paper 2 -->
+                        <div class="iridescent-card p-6 rounded-2xl border border-cyancolor space-y-3 relative overflow-hidden flex flex-col justify-between">
+                            <div class="space-y-2">
+                                <span class="bg-cyancolor/20 text-cyancolor text-xs px-3 py-1 rounded-full font-pixel border border-cyancolor inline-block">
+                                    งานวิจัยระดับปริญญาตรี (ปี 4)
+                                </span>
+                                <h4 class="text-lg font-bold text-white leading-snug">
+                                    "แบรนด์และการสร้างมูลค่าเพิ่มของผลิตภัณฑ์สินค้าตาลโตนด"
+                                </h4>
+                                <p class="text-xs text-gray-300 leading-relaxed">
+                                    <strong>จุดน่าสนใจของวิจัย:</strong> วิจัยด้านการสร้างมูลค่าเพิ่มให้กับผลิตภัณฑ์ตาลโตนด เชื่อมโยงกลยุทธ์แบรนด์กับโอกาสเชิงพาณิชย์และการพัฒนาเศรษฐกิจชุมชน
+                                </p>
+                            </div>
+                            <div class="pt-3 border-t border-gray-700 flex items-center justify-between text-xs">
+                                <span class="text-cyberyellow font-pixel">BRAND VALUE CREATION</span>
+                                <i class="fa-solid fa-tree text-cyancolor text-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- National Conference Presentation Badge -->
+                    <div class="iridescent-card p-6 rounded-2xl border border-neongreen flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <div class="w-16 h-16 rounded-2xl bg-neongreen/20 border-2 border-neongreen flex items-center justify-center text-neongreen text-3xl shrink-0">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <div class="space-y-1 text-center sm:text-left">
+                            <span class="bg-neongreen text-black font-bold text-xs px-2.5 py-0.5 rounded font-pixel">
+                                NATIONAL CONFERENCE PRESENTATION
+                            </span>
+                            <h4 class="text-xl font-bold text-white">The 8th PSU Trang National Conference on Research across Disciplines 2019</h4>
+                            <p class="text-xs text-gray-300">
+                                นำเสนอบทความวิจัยในการประชุมวิชาการระดับชาติ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตตรัง
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 6: งานวิทยากร (SPEAKER & TRAINER) ==================== -->
+        <section id="tab-speaker" class="tab-content hidden space-y-6">
+            <div class="y2k-window neon-border-cyan overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_06 // SPEAKER_TRAINING_PORTFOLIO.EXE</span>
+                    <i class="fa-solid fa-chalkboard-user text-cyancolor"></i>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <div class="text-center max-w-2xl mx-auto space-y-2">
+                        <h3 class="text-2xl font-bold chrome-text">หลักสูตรฝึกอบรม & บทบาทวิทยากร</h3>
+                        <p class="text-xs text-gray-300">
+                            ตัวอย่างหลักสูตร Soft Skills & Technical Training ที่พัฒนาและบรรยายให้กับพนักงานกลุ่มบริษัท สโตน (Deestone)
+                        </p>
+                    </div>
+
+                    <!-- Training Course Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- Course 1 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-hotpink flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-hotpink/20 text-hotpink text-xs font-pixel px-2 py-0.5 rounded">Soft Skills</span>
+                                    <i class="fa-solid fa-comments text-hotpink"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">การรับคำสั่ง รับมอบหมายงาน การนำไปปฏิบัติ</h4>
+                                <p class="text-xs text-gray-300">
+                                    เน้นเทคนิคการสื่อสาร ความเข้าใจเป้าหมายร่วมกัน และการปฏิบัติงานเพื่อผลสัมฤทธิ์ของทีม
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-cyancolor flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-cyancolor/20 text-cyancolor text-xs font-pixel px-2 py-0.5 rounded">Productivity</span>
+                                    <i class="fa-solid fa-gears text-cyancolor"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">การเพิ่มผลผลิตในการทำงานด้วยตนเอง</h4>
+                                <p class="text-xs text-gray-300">
+                                    เสริมสร้างการทำงานที่ยั่งยืน และการบริหารจัดการเวลาในการทำงานประจำวัน
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-neongreen flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-neongreen/20 text-neongreen text-xs font-pixel px-2 py-0.5 rounded">Problem Solving</span>
+                                    <i class="fa-solid fa-magnifying-glass-chart text-neongreen"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">การแก้ปัญหาหน้างานด้วยเทคนิค RCA</h4>
+                                <p class="text-xs text-gray-300">
+                                    Root Cause Analysis วิเคราะห์สาเหตุที่แท้จริงเพื่อป้องกันปัญหาซ้ำซ้อนในสายการผลิต
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+
+                        <!-- Course 4 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-cyberyellow flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-cyberyellow/20 text-cyberyellow text-xs font-pixel px-2 py-0.5 rounded">Professionalism</span>
+                                    <i class="fa-solid fa-user-tie text-cyberyellow"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">การทำงานอย่างมืออาชีพ & การทำงานร่วมกัน</h4>
+                                <p class="text-xs text-gray-300">
+                                    ปลูกฝัง Growth Mindset การทำงานร่วมกันอย่างมีผลสัมฤทธิ์และค่านิยมองค์กร (Core Value)
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+
+                        <!-- Course 5 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-purple-400 flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-purple-500/20 text-purple-300 text-xs font-pixel px-2 py-0.5 rounded">Technical Training</span>
+                                    <i class="fa-solid fa-industry text-purple-400"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">กระบวนการผลิตยางเรเดียล & ความปลอดภัย</h4>
+                                <p class="text-xs text-gray-300">
+                                    ความรู้พื้นฐานกระบวนการผลิต คุณภาพ และมาตรฐาน จป.หัวหน้างาน
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+
+                        <!-- Course 6 -->
+                        <div class="iridescent-card p-5 rounded-xl border border-pink-400 flex flex-col justify-between space-y-3">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-pink-500/20 text-pink-300 text-xs font-pixel px-2 py-0.5 rounded">Train the Trainer</span>
+                                    <i class="fa-solid fa-handshake-angle text-pink-400"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">โค้ชและพี่เลี้ยงวิทยากรภายใน (Instructor Coaching)</h4>
+                                <p class="text-xs text-gray-300">
+                                    พัฒนาทักษะการสอน การตัดต่อ VDO สื่อการสอน และการนำเสนอของวิทยากรภายในองค์กร
+                                </p>
+                            </div>
+                            <span class="text-xs text-neongreen font-pixel">TRAINER: ณัฐริกา อนันต์จรรยา</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 7: DASHBOARD รายงานผลงาน ==================== -->
+        <section id="tab-dashboard" class="tab-content space-y-6">
+            <!-- Window Header -->
+            <div class="y2k-window neon-border-cyan overflow-hidden">
+                <div class="y2k-window-header">
+                    <span class="font-pixel text-white font-bold tracking-wider text-base">SECTION_07 // HRD_PERFORMANCE_DASHBOARD.EXE</span>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-neongreen animate-ping"></span>
+                        <span class="font-pixel text-xs text-white">LIVE_METRICS</span>
+                    </div>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <!-- KPI Metric Cards Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- KPI 1 -->
+                        <div class="iridescent-card p-4 rounded-xl border border-hotpink text-center space-y-1">
+                            <p class="text-xs text-gray-300 font-pixel">TOTAL TRAINEES</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold font-pixel text-hotpink" id="kpiTrainees">1,450+</h3>
+                            <p class="text-[10px] text-gray-400">พนักงานที่ผ่านการอบรม</p>
+                        </div>
+
+                        <!-- KPI 2 -->
+                        <div class="iridescent-card p-4 rounded-xl border border-cyancolor text-center space-y-1">
+                            <p class="text-xs text-gray-300 font-pixel">TRAINING HOURS</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold font-pixel text-cyancolor" id="kpiHours">320+</h3>
+                            <p class="text-[10px] text-gray-400">ชั่วโมงบรรยายวิทยากร</p>
+                        </div>
+
+                        <!-- KPI 3 -->
+                        <div class="iridescent-card p-4 rounded-xl border border-neongreen text-center space-y-1">
+                            <p class="text-xs text-gray-300 font-pixel">EXCELLENT AWARDS</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold font-pixel text-neongreen">5</h3>
+                            <p class="text-[10px] text-gray-400">รางวัลพนักงานดีเด่น</p>
+                        </div>
+
+                        <!-- KPI 4 -->
+                        <div class="iridescent-card p-4 rounded-xl border border-cyberyellow text-center space-y-1">
+                            <p class="text-xs text-gray-300 font-pixel">ISO AUDIT CERT</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold font-pixel text-cyberyellow">3 Standards</h3>
+                            <p class="text-[10px] text-gray-400">ISO 9001/14001/45001</p>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Chart 1: Training Course Breakdown (Doughnut) -->
+                        <div class="y2k-window p-4 rounded-xl border border-hotpink/60 space-y-3">
+                            <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                                <h4 class="font-bold text-hotpink text-sm flex items-center space-x-2">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                    <span>สัดส่วนประเภทหลักสูตรฝึกอบรม (Course Categories)</span>
+                                </h4>
+                            </div>
+                            <div class="h-64 relative flex items-center justify-center">
+                                <canvas id="courseCategoryChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Chart 2: Annual Trainees Growth (Bar/Line) -->
+                        <div class="y2k-window p-4 rounded-xl border border-cyancolor/60 space-y-3">
+                            <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                                <h4 class="font-bold text-cyancolor text-sm flex items-center space-x-2">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                    <span>จำนวนผู้เข้าร่วมการอบรมรายปี (2020 - 2026)</span>
+                                </h4>
+                            </div>
+                            <div class="h-64 relative">
+                                <canvas id="annualTraineesChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Chart 3: HRD Competency Radar -->
+                        <div class="y2k-window p-4 rounded-xl border border-neongreen/60 space-y-3">
+                            <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                                <h4 class="font-bold text-neongreen text-sm flex items-center space-x-2">
+                                    <i class="fa-solid fa-microchip"></i>
+                                    <span>ระดับสมรรถนะความเชี่ยวชาญ (Core Competency Radar)</span>
+                                </h4>
+                            </div>
+                            <div class="h-64 relative flex items-center justify-center">
+                                <canvas id="competencyRadarChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Key HRD Capabilities Matrix -->
+                        <div class="y2k-window p-4 rounded-xl border border-cyberyellow/60 space-y-3 flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-cyberyellow text-sm flex items-center space-x-2 border-b border-gray-700 pb-2 mb-3">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <span>ทักษะและความเชี่ยวชาญหลัก (Key Skill Assessment)</span>
+                                </h4>
+
+                                <div class="space-y-3 text-xs">
+                                    <div>
+                                        <div class="flex justify-between font-bold mb-1">
+                                            <span class="text-gray-200">End-to-End Training & TNA Analysis</span>
+                                            <span class="text-hotpink font-pixel">98%</span>
+                                        </div>
+                                        <div class="w-full bg-black/50 h-2 rounded-full overflow-hidden border border-hotpink/40">
+                                            <div class="bg-hotpink h-full rounded-full" style="width: 98%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-between font-bold mb-1">
+                                            <span class="text-gray-200">Public Speaking & Soft Skills Training</span>
+                                            <span class="text-cyancolor font-pixel">95%</span>
+                                        </div>
+                                        <div class="w-full bg-black/50 h-2 rounded-full overflow-hidden border border-cyancolor/40">
+                                            <div class="bg-cyancolor h-full rounded-full" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-between font-bold mb-1">
+                                            <span class="text-gray-200">ISO 9001/14001/45001 Compliance Audit</span>
+                                            <span class="text-neongreen font-pixel">92%</span>
+                                        </div>
+                                        <div class="w-full bg-black/50 h-2 rounded-full overflow-hidden border border-neongreen/40">
+                                            <div class="bg-neongreen h-full rounded-full" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="flex justify-between font-bold mb-1">
+                                            <span class="text-gray-200">Digital Media & E-Learning Content</span>
+                                            <span class="text-cyberyellow font-pixel">90%</span>
+                                        </div>
+                                        <div class="w-full bg-black/50 h-2 rounded-full overflow-hidden border border-cyberyellow/40">
+                                            <div class="bg-cyberyellow h-full rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3 border-t border-gray-700 text-[11px] text-gray-400">
+                                <i class="fa-solid fa-circle-info text-cyancolor mr-1"></i>
+                                ประเมินจากผลงานการจัดการฝึกอบรม การตรวจประเมิน ISO และการพัฒนาสื่อการสอน
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MANDATORY FLUID FOOTER -->
+    <footer class="w-full bg-gray-100 text-gray-800 border-t-2 border-hotpink py-4 px-4 mt-8 transition-colors">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left text-xs sm:text-sm font-medium">
+            <div class="flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-hotpink inline-block animate-pulse"></span>
+                <span class="text-gray-900 font-bold">
+                    ระบบเว็บส่วนบุคคล พัฒนาโดย นางสาวณัฐริกา อนันต์จรรยา
+                </span>
+            </div>
+            <div class="text-gray-600 font-pixel text-xs">
+                © 2026 NUTTARIKHA ANUNJUNYA PORTFOLIO | Y2K RETRO SYSTEM EDITION
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ==================== SPLASH SCREEN LOGIC ====================
+        let splashDismissed = false;
+
+        function initSplash() {
+            const progressBar = document.getElementById('splashProgress');
+            const statusText = document.getElementById('splashStatus');
+            const statuses = [
+                'LOADING HRD & TRAINING CORE MODULES...',
+                'FETCHING ACADEMIC RECORDS & TRANSCRIPT...',
+                'PREPARING Y2K RETRO GRAPHICS ENGINE...',
+                'SYSTEM READY! CLICK ENTER BELOW'
+            ];
+
+            let step = 0;
+            const interval = setInterval(() => {
+                step++;
+                const progress = Math.min(step * 25, 100);
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (statusText && statuses[step - 1]) {
+                    statusText.innerText = statuses[step - 1];
+                }
+
+                if (step >= 4) {
+                    clearInterval(interval);
+                    // Auto dismiss after brief moment if not clicked
+                    setTimeout(() => {
+                        if (!splashDismissed) dismissSplash();
+                    }, 1200);
+                }
+            }, 500);
+        }
+
+        function dismissSplash() {
+            splashDismissed = true;
+            const splash = document.getElementById('splashScreen');
+            if (splash) {
+                splash.style.opacity = '0';
+                setTimeout(() => {
+                    splash.style.display = 'none';
+                }, 700);
+            }
+        }
+
+        // Run splash on page load / refresh
+        window.onload = function() {
+            initSplash();
+            initCharts();
+            switchTab('dashboard'); // Default to Dashboard on load
+        };
+
+        // ==================== NAVIGATION TAB SWITCHING ====================
+        function switchTab(tabName) {
+            // Hide all tabs
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(el => el.classList.add('hidden'));
+
+            // Reset tab button styles
+            const navTabs = document.querySelectorAll('.nav-tab');
+            navTabs.forEach(tab => {
+                tab.className = "nav-tab px-4 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap transition-all border border-pink-500/40 text-gray-300 hover:text-white hover:border-hotpink flex items-center space-x-1.5";
+            });
+
+            // Show selected tab
+            const targetContent = document.getElementById('tab-' + tabName);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+
+            // Highlight selected button
+            const targetNav = document.getElementById('nav-' + tabName);
+            if (targetNav) {
+                targetNav.className = "nav-tab bubble-btn text-white px-5 py-2 rounded-full font-bold text-xs sm:text-sm whitespace-nowrap shadow-lg flex items-center space-x-1.5";
+            }
+        }
+
+        // ==================== CONTACT FORM HANDLER ====================
+        function handleContactSubmit() {
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const msg = document.getElementById('contactMsg').value.trim();
+            const notice = document.getElementById('contactNotice');
+
+            if (!name || !msg) {
+                notice.className = "text-center text-red-400 font-pixel text-sm mt-2";
+                notice.innerText = "กรุณากรอกชื่อและข้อความที่ต้องการติดต่อ";
+                notice.classList.remove('hidden');
+                return;
+            }
+
+            notice.className = "text-center text-neongreen font-pixel text-sm mt-2";
+            notice.innerText = "✓ ส่งข้อความเรียบร้อยแล้ว! ขอบคุณสำหรับการติดต่อคุณณัฐริกา";
+            notice.classList.remove('hidden');
+
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactMsg').value = '';
+
+            setTimeout(() => {
+                notice.classList.add('hidden');
+            }, 5000);
+        }
+
+        // ==================== SOUND SIMULATION ====================
+        let soundOn = true;
+        function toggleRetroSound() {
+            soundOn = !soundOn;
+            const text = document.getElementById('soundText');
+            const icon = document.getElementById('soundIcon');
+            if (soundOn) {
+                text.innerText = "Y2K SOUND: ON";
+                icon.className = "fa-solid fa-volume-high";
+            } else {
+                text.innerText = "Y2K SOUND: OFF";
+                icon.className = "fa-solid fa-volume-xmark";
+            }
+        }
+
+        // ==================== CHART.JS INITIALIZATION ====================
+        let courseChartInstance, annualChartInstance, radarChartInstance;
+
+        function initCharts() {
+            Chart.defaults.color = '#e2e8f0';
+            Chart.defaults.font.family = 'Prompt, sans-serif';
+
+            // 1. Course Category Doughnut
+            const ctx1 = document.getElementById('courseCategoryChart');
+            if (ctx1) {
+                courseChartInstance = new Chart(ctx1, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Soft Skills & Communication', 'Productivity & RCA', 'Compliance & ISO', 'Technical Training', 'Onboarding & Core Value'],
+                        datasets: [{
+                            data: [35, 25, 15, 15, 10],
+                            backgroundColor: ['#ff71ce', '#01cdfe', '#05ffa1', '#fffb96', '#a200ff'],
+                            borderColor: '#18002e',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { boxWidth: 12, font: { size: 10 } }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 2. Annual Trainees Chart (Bar/Line)
+            const ctx2 = document.getElementById('annualTraineesChart');
+            if (ctx2) {
+                annualChartInstance = new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+                        datasets: [
+                            {
+                                label: 'จำนวนผู้เข้าอบรม (คน)',
+                                data: [120, 180, 210, 260, 310, 350, 180],
+                                backgroundColor: 'rgba(1, 205, 254, 0.6)',
+                                borderColor: '#01cdfe',
+                                borderWidth: 1,
+                                borderRadius: 6
+                            },
+                            {
+                                label: 'สะสม (คน)',
+                                data: [120, 300, 510, 770, 1080, 1430, 1610],
+                                type: 'line',
+                                borderColor: '#ff71ce',
+                                backgroundColor: 'rgba(255, 113, 206, 0.2)',
+                                borderDash: [5, 5],
+                                fill: false,
+                                tension: 0.3
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { grid: { color: 'rgba(255,255,255,0.1)' } },
+                            x: { grid: { display: false } }
+                        },
+                        plugins: {
+                            legend: { labels: { font: { size: 10 } } }
+                        }
+                    }
+                });
+            }
+
+            // 3. Competency Radar Chart
+            const ctx3 = document.getElementById('competencyRadarChart');
+            if (ctx3) {
+                radarChartInstance = new Chart(ctx3, {
+                    type: 'radar',
+                    data: {
+                        labels: [
+                            'TNA & IDP Analysis',
+                            'Public Speaking',
+                            'Course Design',
+                            'ISO Audit & Standards',
+                            'Microlearning & Media',
+                            'RCA & Problem Solving'
+                        ],
+                        datasets: [{
+                            label: 'ระดับทักษะ (Skill Level %)',
+                            data: [98, 95, 96, 92, 90, 94],
+                            backgroundColor: 'rgba(5, 255, 161, 0.25)',
+                            borderColor: '#05ffa1',
+                            pointBackgroundColor: '#fffb96',
+                            pointBorderColor: '#05ffa1',
+                            pointHoverBackgroundColor: '#ffffff'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                angleLines: { color: 'rgba(255,255,255,0.2)' },
+                                grid: { color: 'rgba(255,255,255,0.15)' },
+                                pointLabels: { font: { size: 9 }, color: '#fff' },
+                                ticks: { display: false, max: 100 }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

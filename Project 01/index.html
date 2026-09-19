@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แฟ้มสะสมและรายงานผลงานบุคคล - นางสาวณัฐริกา อนันต์จรรยา</title>
+  
+  <!-- Google Fonts: Archivo Black, Space Grotesk, Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Prompt:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Neobrutalist UI Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Chart.js for Interactive Dashboard -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SPLASH SCREEN (First load & Refresh)
+       With Neobrutalism Background Decoration
+  =========================================== -->
+  <div id="splashScreen" class="splash-overlay">
+    <!-- Geometric Background Decorations -->
+    <div class="bg-deco deco-circle-yellow"></div>
+    <div class="bg-deco deco-square-blue"></div>
+    <div class="bg-deco deco-triangle-coral"></div>
+    <div class="bg-deco deco-star-purple">✦</div>
+    <div class="bg-deco deco-cross-1">✖</div>
+    <div class="bg-deco deco-cross-2">✖</div>
+    <div class="bg-deco deco-grid-dots"></div>
+
+    <div class="splash-card">
+      <div class="splash-badge">★ OFFICIAL E-PORTFOLIO ★</div>
+      <div class="splash-avatar-box">
+        <img src="assets/portrait.jpg" alt="น.ส. ณัฐริกา อนันต์จรรยา" class="splash-avatar">
+        <span class="status-dot"></span>
+      </div>
+      <h1 class="splash-title">CURRICULUM VITAE</h1>
+      <h2 class="splash-subtitle">นางสาวณัฐริกา อนันต์จรรยา</h2>
+      <p class="splash-role">เจ้าหน้าที่ฝึกอบรมอาวุโส (Senior Training Officer) & นักศึกษาปริญญาโท S-MBR มจพ.</p>
+      
+      <!-- Brutalist Progress Bar -->
+      <div class="splash-progress-wrapper">
+        <div class="splash-progress-track">
+          <div id="splashProgressBar" class="splash-progress-fill"></div>
+        </div>
+        <div class="splash-progress-info">
+          <span class="loading-label">INITIALIZING SYSTEM...</span>
+          <span id="splashPercent" class="loading-num">0%</span>
+        </div>
+      </div>
+
+      <button id="enterAppBtn" class="neo-btn neo-btn-yellow enter-btn">
+        <span>เข้าสู่เว็บไซต์ / ENTER NOW</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MAIN APP CONTAINER
+  =========================================== -->
+  <div id="mainApp" class="app-wrapper">
+
+    <!-- Top Announcement Bar (Ticker) -->
+    <div class="neo-ticker">
+      <div class="ticker-content">
+        <span>⚡ PORTFOLIO OF NUTTARIKHA ANUNJUNYA</span>
+        <span>★ SENIOR TRAINING OFFICER</span>
+        <span>★ SVIZZ-ONE CORP & DEESTONE GROUP</span>
+        <span>★ KMUTNB S-MBR #17</span>
+        <span>★ 5-TIME OUTSTANDING EMPLOYEE</span>
+        <span>★ MASTER TRAINER DSD CERTIFIED</span>
+        <span>★ ISO 9001/14001/45001 INTERNAL AUDITOR</span>
+        <span>⚡ PORTFOLIO OF NUTTARIKHA ANUNJUNYA</span>
+        <span>★ SENIOR TRAINING OFFICER</span>
+        <span>★ SVIZZ-ONE CORP & DEESTONE GROUP</span>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="neo-header">
+      <div class="header-container">
+        <a href="#hero" class="brand-logo">
+          <div class="logo-box">NA</div>
+          <div class="brand-text">
+            <span class="brand-name">ณัฐริกา อนันต์จรรยา</span>
+            <span class="brand-tag">HRD & Training Portfolio</span>
+          </div>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileNavToggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Main 7 Menus Navigation -->
+        <nav id="mainNav" class="neo-nav">
+          <ul class="nav-list">
+            <li><a href="#education" class="nav-item active" data-target="education"><i class="fa-solid fa-graduation-cap"></i> 1. ประวัติการศึกษา</a></li>
+            <li><a href="#contact" class="nav-item" data-target="contact"><i class="fa-solid fa-address-book"></i> 2. สถานที่ติดต่อ</a></li>
+            <li><a href="#achievements" class="nav-item" data-target="achievements"><i class="fa-solid fa-trophy"></i> 3. ผลงานโดดเด่น</a></li>
+            <li><a href="#academic" class="nav-item" data-target="academic"><i class="fa-solid fa-book-open"></i> 4. ผลงานวิชาการ</a></li>
+            <li><a href="#research" class="nav-item" data-target="research"><i class="fa-solid fa-newspaper"></i> 5. ผลงานบทความวิจัย</a></li>
+            <li><a href="#speaker" class="nav-item" data-target="speaker"><i class="fa-solid fa-chalkboard-user"></i> 6. งานวิทยากร</a></li>
+            <li><a href="#dashboard" class="nav-item nav-item-highlight" data-target="dashboard"><i class="fa-solid fa-chart-line"></i> 7. Dashboard ผลงาน</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tags">
+            <span class="tag tag-coral">HRD SPECIALIST</span>
+            <span class="tag tag-green">MASTER TRAINER</span>
+            <span class="tag tag-yellow">KMUTNB S-MBR</span>
+          </div>
+          <h1 class="hero-heading">
+            รายงานผลงานบุคคล<br>
+            <span class="highlight-text">ณัฐริกา อนันต์จรรยา</span>
+          </h1>
+          <p class="hero-quote">
+            "ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น" — มุ่งเน้นการพัฒนาทรัพยากรมนุษย์ด้วย Growth Mindset วงจรการฝึกอบรมสมบูรณ์แบบ (End-to-End Training) และนวัตกรรมดิจิทัลเพื่อขับเคลื่อนองค์กรสู่อนาคต
+          </p>
+
+          <div class="hero-actions">
+            <a href="#dashboard" class="neo-btn neo-btn-yellow">
+              <i class="fa-solid fa-chart-pie"></i> สำรวจ Dashboard ผลงาน
+            </a>
+            <button id="openCvModalBtn" class="neo-btn neo-btn-white">
+              <i class="fa-solid fa-file-pdf"></i> ดูเอกสาร CV ฉบับเต็ม (15 หน้า)
+            </button>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-pill">
+              <span class="stat-pill-num">5+ ปี</span>
+              <span class="stat-pill-label">ประสบการณ์ HRD</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-pill-num">1,500+</span>
+              <span class="stat-pill-label">พนักงานผ่านการอบรม</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-pill-num">5 รางวัล</span>
+              <span class="stat-pill-label">พนักงานดีเด่น</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-card-frame">
+            <div class="card-corner-tag">S-MBR #17</div>
+            <img src="assets/portrait.jpg" alt="นางสาวณัฐริกา อนันต์จรรยา" class="hero-portrait">
+            <div class="hero-card-caption">
+              <strong>น.ส. ณัฐริกา อนันต์จรรยา (นัท/โดนัท)</strong>
+              <span>เจ้าหน้าที่ฝึกอบรมอาวุโส | บ.สวิซซ์-วัน คอร์ปอเรชั่นฯ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 1: ประวัติการศึกษา (EDUCATION)
+    =========================================== -->
+    <section id="education" class="app-section bg-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">01</div>
+          <div>
+            <h2 class="section-title">ประวัติการศึกษา (EDUCATION)</h2>
+            <p class="section-desc">เส้นทางการศึกษาและความสำเร็จทางวิชาการ ปริญญาโท มจพ. และปริญญาตรีเกียรตินิยมอันดับ 2</p>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: Master's Degree -->
+          <div class="timeline-card card-blue">
+            <div class="card-badge">กำลังศึกษา / ปัจจุบัน</div>
+            <div class="card-year">2567 - ปัจจุบัน</div>
+            <h3 class="card-title">ระดับปริญญาโท (Master's Degree)</h3>
+            <h4 class="card-institution">คณะพัฒนาธุรกิจและอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ. / KMUTNB)</h4>
+            <p class="card-detail">
+              <strong>แผนการเรียน:</strong> บริหารธุรกิจมหาบัณฑิต สาขาการพัฒนาธุรกิจอุตสาหกรรมและกลยุทธ์ (S-MBR รุ่นที่ 17)<br>
+              <strong>รหัสนักศึกษา:</strong> s6916011856072<br>
+              <strong>ความเชี่ยวชาญ:</strong> การจัดการเทคโนโลยีสารสนเทศเพื่อธุรกิจ (MIS), การพัฒนาระบบสถาปัตยกรรม HRMS / LMS, พฤติกรรมองค์การและจิตวิทยาอุตสาหกรรม
+            </p>
+          </div>
+
+          <!-- Item 2: Bachelor's Degree -->
+          <div class="timeline-card card-yellow">
+            <div class="card-badge badge-honor">เกียรตินิยมอันดับ 2 ★ GPA 3.40</div>
+            <div class="card-year">2558 - 2562</div>
+            <h3 class="card-title">ระดับปริญญาตรี (Bachelor's Degree)</h3>
+            <h4 class="card-institution">คณะวิทยาการจัดการ มหาวิทยาลัยศิลปากร วิทยาเขตสารสนเทศเพชรบุรี</h4>
+            <p class="card-detail">
+              <strong>ปริญญา:</strong> บริหารธุรกิจบัณฑิต (บธ.บ.) สาขาธุรกิจทั่วไป เอกการเงิน<br>
+              <strong>เกียรตินิยม:</strong> เกียรตินิยมอันดับ 2 ค่าระดับเฉลี่ยสะสม 3.40 (จำนวน 143 หน่วยกิต)<br>
+              <strong>งานวิจัยระดับปริญญาตรี 2 เรื่อง:</strong><br>
+              • วิจัยปี 3: การศึกษาพฤติกรรมและปัจจัยที่ส่งผลต่อการซื้อเครื่องสำอางเกาหลีประเภทผลิตภัณฑ์ตกแต่งใบหน้าผ่านเครือข่ายสังคมออนไลน์<br>
+              • วิจัยปี 4: แบรนด์และการสร้างมูลค่าเพิ่มของผลิตภัณฑ์สินค้าตาลโตนด (ได้รับคัดเลือกนำเสนอในที่ประชุมวิชาการระดับชาติ PSU Trang)
+            </p>
+            <div class="card-actions">
+              <button class="mini-btn view-doc-btn" data-page="7">
+                <i class="fa-solid fa-file-invoice"></i> ดูใบ Transcript หน้า 1
+              </button>
+              <button class="mini-btn view-doc-btn" data-page="8">
+                <i class="fa-solid fa-file-invoice"></i> ดูใบ Transcript หน้า 2
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3: High School -->
+          <div class="timeline-card card-pink">
+            <div class="card-year">2556 - 2558</div>
+            <h3 class="card-title">ระดับมัธยมศึกษาตอนปลาย</h3>
+            <h4 class="card-institution">โรงเรียนคงทองวิทยา จังหวัดนครปฐม</h4>
+            <p class="card-detail">
+              สำเร็จการศึกษาปีการศึกษา 2558 ด้วยพื้นฐานสายการเรียนที่เน้นกระบวนการคิดวิเคราะห์และกิจกรรมผู้นำนักเรียน
+            </p>
+          </div>
+        </div>
+
+        <!-- Transcript & Documents Preview Showcase -->
+        <div class="doc-preview-box">
+          <div class="box-header">
+            <h3><i class="fa-solid fa-scroll"></i> เอกสารแสดงผลการศึกษาอย่างเป็นทางการ (Official Transcripts)</h3>
+            <span class="tag tag-black">SILPAKORN UNIVERSITY</span>
+          </div>
+          <div class="transcript-grid">
+            <div class="transcript-thumb-card view-doc-btn" data-page="7">
+              <img src="assets/cv_pages/page_7.png" alt="Transcript Page 1">
+              <div class="thumb-overlay">
+                <span><i class="fa-solid fa-magnifying-glass-plus"></i> ขยายดู Transcript หน้า 1</span>
+              </div>
+            </div>
+            <div class="transcript-thumb-card view-doc-btn" data-page="8">
+              <img src="assets/cv_pages/page_8.png" alt="Transcript Page 2">
+              <div class="thumb-overlay">
+                <span><i class="fa-solid fa-magnifying-glass-plus"></i> ขยายดู Transcript หน้า 2 (GPA 3.40)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 2: สถานที่ติดต่อ (CONTACT)
+    =========================================== -->
+    <section id="contact" class="app-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">02</div>
+          <div>
+            <h2 class="section-title">สถานที่ติดต่อ (CONTACT & LOCATION)</h2>
+            <p class="section-desc">ช่องทางการสื่อสาร ข้อมูลที่อยู่ และสถานที่ปฏิบัติงานปัจจุบัน</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card card-yellow">
+              <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="contact-text">
+                <div class="contact-lbl">เบอร์โทรศัพท์ติดต่อ</div>
+                <div class="contact-val"><a href="tel:0877162468">087-716-2468</a></div>
+              </div>
+            </div>
+
+            <div class="contact-card card-blue">
+              <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div class="contact-text">
+                <div class="contact-lbl">อีเมลทางวิชาการและการทำงาน</div>
+                <div class="contact-val"><a href="mailto:s6916011856072@email.kmutnb.ac.th">s6916011856072@email.kmutnb.ac.th</a></div>
+              </div>
+            </div>
+
+            <div class="contact-card card-green">
+              <div class="contact-icon"><i class="fa-brands fa-line"></i></div>
+              <div class="contact-text">
+                <div class="contact-lbl">LINE ID</div>
+                <div class="contact-val">dn_ntrk</div>
+              </div>
+            </div>
+
+            <div class="contact-card card-coral">
+              <div class="contact-icon"><i class="fa-solid fa-building"></i></div>
+              <div class="contact-text">
+                <div class="contact-lbl">สถานที่ทำงานปัจจุบัน</div>
+                <div class="contact-val">
+                  <strong>บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด</strong><br>
+                  (Svizz-One Corporation Ltd. / เครือกลุ่มบริษัท ดีสโตน Deestone)<br>
+                  แผนก Technical Training / HR Development / HR & Admin
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card card-purple">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <div class="contact-lbl">ที่อยู่ตามภูมิลำเนา</div>
+                <div class="contact-val">83 หมู่ 10 ตำบลบางปลา อำเภอบางเลน จังหวัดนครปฐม 73130</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form & vCard Box -->
+          <div class="contact-interactive-col">
+            <div class="neo-box bg-white">
+              <div class="box-title-bar">
+                <span><i class="fa-solid fa-paper-plane"></i> ฝากข้อความติดต่อกลับ</span>
+                <span class="dot-btn red"></span>
+              </div>
+              <form id="contactForm" class="neo-form">
+                <div class="form-group">
+                  <label for="senderName">ชื่อ-นามสกุล / หน่วยงาน :</label>
+                  <input type="text" id="senderName" class="neo-input" placeholder="ระบุชื่อผู้ติดต่อ หรือบริษัท" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">อีเมล หรือ เบอร์โทร :</label>
+                  <input type="text" id="senderEmail" class="neo-input" placeholder="example@email.com หรือ 08X-XXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                  <label for="senderSubject">เรื่องที่ต้องการติดต่อ :</label>
+                  <select id="senderSubject" class="neo-input">
+                    <option value="training">ติดต่อเป็นวิทยากรบรรยาย / จัดฝึกอบรม</option>
+                    <option value="academic">ความร่วมมือทางวิชาการและงานวิจัย</option>
+                    <option value="audit">งานที่ปรึกษา / Internal Auditor / OJT</option>
+                    <option value="other">เรื่องอื่นๆ</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="senderMessage">ข้อความ :</label>
+                  <textarea id="senderMessage" class="neo-input" rows="4" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+                </div>
+                <button type="submit" class="neo-btn neo-btn-green w-100">
+                  <i class="fa-solid fa-paper-plane"></i> ส่งข้อความทันที (SEND MESSAGE)
+                </button>
+                <div id="formSuccessAlert" class="neo-alert neo-alert-success mt-3 d-none">
+                  ✔ ส่งข้อความจำลองเรียบร้อยแล้ว! ขอบคุณที่ติดต่อ น.ส. ณัฐริกา อนันต์จรรยา
+                </div>
+              </form>
+            </div>
+
+            <!-- vCard Quick Download -->
+            <div class="vcard-download-box">
+              <button id="downloadVcardBtn" class="neo-btn neo-btn-yellow w-100">
+                <i class="fa-solid fa-id-card"></i> บันทึกข้อมูลการติดต่อลงมือถือ (Save Contact vCard)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 3: ผลงานโดดเด่น (OUTSTANDING ACHIEVEMENTS)
+    =========================================== -->
+    <section id="achievements" class="app-section bg-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">03</div>
+          <div>
+            <h2 class="section-title">ผลงานโดดเด่น (OUTSTANDING ACHIEVEMENTS)</h2>
+            <p class="section-desc">รางวัลพนักงานดีเด่น 5 สมัย วุฒิบัตรวิทยากรต้นแบบ และผู้ตรวจประเมินระบบมาตรฐานสากล ISO</p>
+          </div>
+        </div>
+
+        <!-- Filter Tags for Achievements -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+          <button class="filter-btn" data-filter="employee">เกียรติบัตรพนักงานดีเด่น (5 สมัย)</button>
+          <button class="filter-btn" data-filter="cert">วุฒิบัตรวิชาชีพ & ISO</button>
+          <button class="filter-btn" data-filter="academic">รางวัลเกียรตินิยม</button>
+        </div>
+
+        <div class="awards-grid">
+          <!-- Award 1: Employee of the year 2563 -->
+          <div class="award-card" data-cat="employee">
+            <div class="award-tag tag-yellow">พนักงานดีเด่น</div>
+            <div class="award-img-box view-doc-btn" data-page="14">
+              <img src="assets/cv_pages/page_14.png" alt="เกียรติบัตรพนักงานดีเด่น 2563" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบประกาศ</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">ปี 2563</div>
+              <h3 class="award-title">เกียรติบัตรพนักงานดีเด่น ประจำปี 2563</h3>
+              <p class="award-org">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (ฝ่าย HR & Admin)</p>
+              <p class="award-desc">มอบเพื่อยกย่องในฐานะผู้ปฏิบัติงานด้วยความขยัน หมั่นเพียร มีความวิริยะอุตสาหะ ตลอดระยะเวลาการทำงาน</p>
+            </div>
+          </div>
+
+          <!-- Award 2: Employee of the year 2563-2564 -->
+          <div class="award-card" data-cat="employee">
+            <div class="award-tag tag-yellow">พนักงานดีเด่น</div>
+            <div class="award-img-box view-doc-btn" data-page="14">
+              <img src="assets/cv_pages/page_14.png" alt="เกียรติบัตรพนักงานดีเด่น 2563-2564" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบประกาศ</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">ปี 2563 - 2564</div>
+              <h3 class="award-title">เกียรติบัตรพนักงานดีเด่น ประจำปี 2563-2564</h3>
+              <p class="award-org">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (ฝ่าย HR & Admin)</p>
+              <p class="award-desc">ได้รับคัดเลือกต่อเนื่องเป็นปีที่ 2 จากผลงานการพัฒนาหลักสูตรและการบริหารงานฝึกอบรมที่สร้างผลสัมฤทธิ์สูง</p>
+            </div>
+          </div>
+
+          <!-- Award 3: Employee of the year 2566 -->
+          <div class="award-card" data-cat="employee">
+            <div class="award-tag tag-coral">พนักงานดีเด่น</div>
+            <div class="award-img-box view-doc-btn" data-page="14">
+              <img src="assets/cv_pages/page_14.png" alt="เกียรติบัตรพนักงานดีเด่น 2566" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบประกาศ</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">ปี 2566</div>
+              <h3 class="award-title">เกียรติบัตรพนักงานดีเด่น ประจำปี 2566</h3>
+              <p class="award-org">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (กลุ่มบริษัท ดีสโตน Deestone)</p>
+              <p class="award-desc">แผนก Plant Training ฝ่าย HR Development การขับเคลื่อนระบบฝึกอบรมหน้างานเชิงปฏิบัติการ</p>
+            </div>
+          </div>
+
+          <!-- Award 4: Employee of the year 2566-2567 -->
+          <div class="award-card" data-cat="employee">
+            <div class="award-tag tag-coral">พนักงานดีเด่น</div>
+            <div class="award-img-box view-doc-btn" data-page="14">
+              <img src="assets/cv_pages/page_14.png" alt="เกียรติบัตรพนักงานดีเด่น 2566-2567" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบประกาศ</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">ปี 2566 - 2567</div>
+              <h3 class="award-title">เกียรติบัตรพนักงานดีเด่น ประจำปี 2566-2567</h3>
+              <p class="award-org">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด (ฝ่าย Technical Training)</p>
+              <p class="award-desc">ผลงานการพัฒนาสื่อวิดีโอเทคนิคการสอน และการยกระดับสมรรถนะบุคลากรฝ่ายผลิต</p>
+            </div>
+          </div>
+
+          <!-- Award 5: Employee of the year 2566-2568 -->
+          <div class="award-card" data-cat="employee">
+            <div class="award-tag tag-coral">พนักงานดีเด่น 5 สมัย</div>
+            <div class="award-img-box view-doc-btn" data-page="14">
+              <img src="assets/cv_pages/page_14.png" alt="เกียรติบัตรพนักงานดีเด่น 2566-2568" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบประกาศ</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">ปี 2566 - 2568</div>
+              <h3 class="award-title">เกียรติบัตรพนักงานดีเด่น ประจำปี 2566-2568</h3>
+              <p class="award-org">บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด</p>
+              <p class="award-desc">ตอกย้ำมาตรฐานความเป็นเลิศในฐานะนักพัฒนาบุคลากรที่ทุ่มเทและสร้างคุณค่าแก่องค์กรอย่างต่อเนื่อง</p>
+            </div>
+          </div>
+
+          <!-- Award 6: Master Trainer DSD -->
+          <div class="award-card" data-cat="cert">
+            <div class="award-tag tag-green">กระทรวงแรงงาน</div>
+            <div class="award-img-box view-doc-btn" data-page="15">
+              <img src="assets/cv_pages/page_15.png" alt="วุฒิบัตรวิทยากรต้นแบบ" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบวุฒิบัตร</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">15 - 17 ธันวาคม 2568</div>
+              <h3 class="award-title">วุฒิบัตร "วิทยากรต้นแบบ" (Master Trainer - 18 ชม.)</h3>
+              <p class="award-org">กรมพัฒนาฝีมือแรงงาน กระทรวงแรงงาน (สถาบันพัฒนาฝีมือแรงงาน 16 นครปฐม)</p>
+              <p class="award-desc">ผ่านการฝึกอบรมหลักสูตรการพัฒนาวิทยากรต้นแบบ เพื่อทำหน้าที่ถ่ายทอดความรู้และยกระดับฝีมือแรงงานตามมาตรฐานระดับประเทศ</p>
+            </div>
+          </div>
+
+          <!-- Award 7: ISO Internal Auditor -->
+          <div class="award-card" data-cat="cert">
+            <div class="award-tag tag-blue">INTERNATIONAL ISO</div>
+            <div class="award-img-box view-doc-btn" data-page="15">
+              <img src="assets/cv_pages/page_15.png" alt="Certificate of Achievement ISO Internal Auditor" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูใบรับรอง</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">September 11-12, 2025</div>
+              <h3 class="award-title">ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 Internal Auditor</h3>
+              <p class="award-org">Certified based on ISO 19011:2018 (Udumboon Co., Ltd.)</p>
+              <p class="award-desc">ผ่านการอบรมและผ่านเกณฑ์เป็นผู้ตรวจประเมินระบบการจัดการคุณภาพ สิ่งแวดล้อม และอาชีวอนามัยและความปลอดภัยภายในองค์กร</p>
+            </div>
+          </div>
+
+          <!-- Award 8: 2nd Class Honor Degree -->
+          <div class="award-card" data-cat="academic">
+            <div class="award-tag tag-purple">เกียรตินิยมอันดับ 2</div>
+            <div class="award-img-box view-doc-btn" data-page="5">
+              <img src="assets/cv_pages/page_5.png" alt="เกียรตินิยมอันดับ 2 มหาวิทยาลัยศิลปากร" class="award-thumb">
+              <span class="zoom-badge"><i class="fa-solid fa-eye"></i> ดูหลักฐาน</span>
+            </div>
+            <div class="award-info">
+              <div class="award-date">สำเร็จปีการศึกษา 2562</div>
+              <h3 class="award-title">ปริญญาบริหารธุรกิจบัณฑิต เกียรตินิยมอันดับ 2</h3>
+              <p class="award-org">มหาวิทยาลัยศิลปากร วิทยาเขตสารสนเทศเพชรบุรี</p>
+              <p class="award-desc">ผลการเรียนเฉลี่ยสะสม 3.40 สาขาธุรกิจทั่วไป เอกการเงิน คณะวิทยาการจัดการ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 4: ผลงานวิชาการ (ACADEMIC WORKS)
+    =========================================== -->
+    <section id="academic" class="app-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">04</div>
+          <div>
+            <h2 class="section-title">ผลงานวิชาการ (ACADEMIC WORKS & PROJECTS)</h2>
+            <p class="section-desc">การศึกษาค้นคว้า การออกแบบสถาปัตยกรรมเทคโนโลยีสารสนเทศ และการศึกษาดูงานอุตสาหกรรมชั้นนำ</p>
+          </div>
+        </div>
+
+        <div class="academic-grid">
+          <!-- Academic Project 1: IT System Architecture & HRMS/LMS -->
+          <div class="academic-card card-yellow">
+            <div class="card-tag">ระดับปริญญาโท มจพ. S-MBR</div>
+            <h3 class="academic-title">สถาปัตยกรรมระบบ HRMS / LMS โมดูล "Auto-OJT Mapping"</h3>
+            <p class="academic-subtitle">การออกแบบการทรานส์ฟอร์มระบบฝึกอบรม On-the-Job Training ด้วยเทคโนโลยีสารสนเทศเพื่อธุรกิจ</p>
+            <div class="academic-body">
+              <p>
+                ออกแบบโมเดลปรับเปลี่ยนกระบวนการฝึกอบรมบุคลากรจากการทำงานบนไฟล์กระดาษและสเปรดชีตแบบเดิม (Manual & Paper-based) สู่ระบบดิจิทัลแบบรวมศูนย์ (Centralized Database & Cloud Platform):
+              </p>
+              <ul class="neo-list">
+                <li><strong>Auto-OJT Mapping:</strong> ระบบจับคู่หลักสูตรฝึกอบรมกับ Job Description และตำแหน่งงานของพนักงานอัตโนมัติ 100% ถูกต้องแม่นยำ</li>
+                <li><strong>E-Signature & Paperless:</strong> เซ็นอนุมัติผ่านแท็บเล็ตและเว็บเบราว์เซอร์ ลดการใช้กระดาษลงกว่า 90%</li>
+                <li><strong>Efficiency Boost:</strong> ลดระยะเวลาการอนุมัติเอกสารจากเดิม 3-5 วัน เหลือเพียงไม่กี่นาที</li>
+                <li><strong>Real-time Compliance:</strong> ดึงรายงานประวัติการฝึกอบรมรองรับการตรวจ Audit และส่งสถาบันพัฒนาฝีมือแรงงานได้ทันที</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Academic Project 2: Industry Study Tours -->
+          <div class="academic-card card-blue">
+            <div class="card-tag">การศึกษาดูงานภาคอุตสาหกรรม</div>
+            <h3 class="academic-title">รายงานการศึกษาดูงานกระบวนการผลิตและการจัดการธุรกิจจริง</h3>
+            <p class="academic-subtitle">การเชื่อมโยงทฤษฎีการจัดการสู่อุตสาหกรรมระดับประเทศ</p>
+            <div class="academic-body">
+              <div class="sub-project">
+                <h4>1. การศึกษาดูงาน บริษัท บิทไว้ส์ (ประเทศไทย) จำกัด (Bitwise Thailand)</h4>
+                <p>ศึกษาเทคโนโลยีการผลิตเครื่องปรับอากาศมาตรฐานสากล การบริหารจัดการโซ่อุปทาน (Supply Chain) และระบบอัตโนมัติในสายการผลิต</p>
+              </div>
+              <div class="sub-project mt-2">
+                <h4>2. การศึกษาดูงานกลุ่มอาชีพเกลือทะเลกังหันทอง (สมุทรสงคราม)</h4>
+                <p>ศึกษากระบวนการเพิ่มมูลค่าผลิตภัณฑ์ชุมชนภูมิปัญญาไทย นวัตกรรมสปาเกลือ และการสร้างความเข้มแข็งของวิสาหกิจชุมชน</p>
+                <div class="photo-link-wrap">
+                  <button class="mini-btn view-doc-btn" data-page="6">
+                    <i class="fa-solid fa-camera"></i> ดูภาพกิจกรรมศึกษาดูงานจริง
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Project 3: Context Diagram & Risk Evaluation -->
+          <div class="academic-card card-green">
+            <div class="card-tag">System Analysis & Security</div>
+            <h3 class="academic-title">การวิเคราะห์ Context Diagram & การประเมินการควบคุมภายในด้าน IT</h3>
+            <p class="academic-subtitle">รายวิชาการจัดการเทคโนโลยีสารสนเทศเพื่อธุรกิจ (160115201)</p>
+            <div class="academic-body">
+              <p>
+                วิเคราะห์โครงสร้างระบบสารสนเทศระดับองค์กร (TPS, MIS, DSS, ESS) เชื่อมโยงระดับการบริหารงานตั้งแต่ผู้ปฏิบัติการจนถึงผู้บริหารระดับสูง (C-Level):
+              </p>
+              <ul class="neo-list">
+                <li>การออกแบบ Context Diagram แสดง Flow ข้อมูลการฝึกอบรมระหว่างองค์กร, ผู้เรียน, วิทยากร, ผู้บริหาร และหน่วยงานภาครัฐ</li>
+                <li>การประเมินความเสี่ยงและมาตรการควบคุมภายใน (IT Risk and Internal Control Blueprint) สำหรับระบบ HRMS</li>
+                <li>การวิเคราะห์พฤติกรรมมนุษย์และจิตวิทยาองค์การ (The OB Blueprint) เพื่อขับเคลื่อนการเปลี่ยนแปลงทางเทคโนโลยี</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 5: ผลงานบทความวิจัย (RESEARCH ARTICLES)
+    =========================================== -->
+    <section id="research" class="app-section bg-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">05</div>
+          <div>
+            <h2 class="section-title">ผลงานบทความวิจัย (RESEARCH ARTICLES & PUBLICATIONS)</h2>
+            <p class="section-desc">การนำเสนอบทความวิจัยในการประชุมวิชาการระดับชาติ และงานวิจัยเชิงประจักษ์ด้านพฤติกรรมผู้บริโภค</p>
+          </div>
+        </div>
+
+        <div class="research-grid">
+          <!-- Research 1: PSU Trang National Conference -->
+          <div class="research-card">
+            <div class="research-header-badge">
+              <span class="badge-tag">NATIONAL CONFERENCE PROCEEDINGS</span>
+              <span class="badge-year">The 8th PSU Trang Conference 2019</span>
+            </div>
+            
+            <div class="research-main">
+              <div class="research-content-col">
+                <h3 class="research-title">แบรนด์และการสร้างมูลค่าเพิ่มของผลิตภัณฑ์สินค้าตาลโตนด</h3>
+                <h4 class="research-eng-title">Brand and Value Creation of Asian Palmyra Palm Products</h4>
+                <div class="research-meta">
+                  <span><i class="fa-solid fa-user-pen"></i> ผู้วิจัย: นางสาวณัฐริกา อนันต์จรรยา และคณะ</span><br>
+                  <span><i class="fa-solid fa-landmark"></i> เผยแพร่ใน: การประชุมวิชาการระดับชาติ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตตรัง ครั้งที่ 8 (The 8th PSU Trang National Conference on Research across Disciplines 2019)</span>
+                </div>
+                <div class="research-abstract">
+                  <strong>บทคัดย่อ / สาระสำคัญ:</strong>
+                  งานวิจัยมุ่งเน้นการศึกษาและวิเคราะห์แนวทางการสร้างมูลค่าเพิ่ม (Value Creation) ให้กับผลิตภัณฑ์จากตาลโตนดในท้องถิ่น เชื่อมโยงกลยุทธ์การสร้างตราสินค้า (Brand Strategy) การออกแบบบรรจุภัณฑ์ และการตลาดเชิงประสบการณ์ เพื่อตอบสนองความต้องการของผู้บริโภคยุคใหม่ และเปิดโอกาสทางการค้าเชิงพาณิชย์ให้กับกลุ่มเกษตรกรและผู้ประกอบการชุมชน
+                </div>
+                <div class="research-actions">
+                  <button class="neo-btn neo-btn-yellow view-doc-btn" data-page="6">
+                    <i class="fa-solid fa-image"></i> ดูภาพการนำเสนองานวิจัยบนเวทีจริง
+                  </button>
+                  <button class="neo-btn neo-btn-white view-doc-btn" data-page="5">
+                    <i class="fa-solid fa-file-lines"></i> ดูข้อมูลการศึกษาใน CV
+                  </button>
+                </div>
+              </div>
+
+              <div class="research-photo-col">
+                <div class="research-photo-frame view-doc-btn" data-page="6">
+                  <img src="assets/cv_pages/page_6.png" alt="การนำเสนองานวิจัย The 8th PSU Trang">
+                  <div class="photo-caption">
+                    <i class="fa-solid fa-microphone-lines"></i> ภาพบรรยากาศการนำเสนอ ณ ม.สงขลานครินทร์ วิทยาเขตตรัง
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research 2: Consumer Behavior on E-Commerce -->
+          <div class="research-card">
+            <div class="research-header-badge">
+              <span class="badge-tag">BACHELOR RESEARCH STUDY</span>
+              <span class="badge-year">ปีการศึกษา 2560 - 2561</span>
+            </div>
+            
+            <div class="research-main">
+              <div class="research-content-col">
+                <h3 class="research-title">การศึกษาพฤติกรรมและปัจจัยที่ส่งผลต่อการซื้อเครื่องสำอางเกาหลีประเภทผลิตภัณฑ์ตกแต่งใบหน้าผ่านเครือข่ายสังคมออนไลน์</h3>
+                <h4 class="research-eng-title">A Study of Consumer Behaviors and Factors Affecting Purchase Decisions of Korean Cosmetics via Social Networks</h4>
+                <div class="research-meta">
+                  <span><i class="fa-solid fa-user-pen"></i> ผู้วิจัย: นางสาวณัฐริกา อนันต์จรรยา (นักศึกษาปริญญาตรี ปีที่ 3)</span><br>
+                  <span><i class="fa-solid fa-school"></i> ภาควิชาการจัดการ คณะวิทยาการจัดการ มหาวิทยาลัยศิลปากร</span>
+                </div>
+                <div class="research-abstract">
+                  <strong>สาระสำคัญของงานวิจัย:</strong>
+                  ศึกษาการเติบโตของการสั่งซื้อสินค้าบนระบบพาณิชย์อิเล็กทรอนิกส์ (E-Commerce) และปัจจัยส่วนประสมทางการตลาด (4Ps / 7Ps) ที่มีผลต่อการตัดสินใจซื้อของผู้บริโภคผ่านสื่อโซเชียลมีเดีย เช่น Facebook และ Instagram ซึ่งเป็นองค์ความรู้รากฐานสำคัญที่นำมาต่อยอดสู่การทำ Digital Learning และการออกแบบสื่อการเรียนรู้ในสายงาน HRD
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 6: งานวิทยากร (SPEAKER & TRAINER)
+    =========================================== -->
+    <section id="speaker" class="app-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">06</div>
+          <div>
+            <h2 class="section-title">งานวิทยากร (SPEAKER & TRAINER EXPERIENCE)</h2>
+            <p class="section-desc">การถ่ายทอดความรู้ Soft Skills, การโค้ชชิ่งวิทยากรภายใน, และการผลิตสื่อนวัตกรรมวิดีโอเพื่อการเรียนรู้</p>
+          </div>
+        </div>
+
+        <!-- End-to-End Training Process Cards -->
+        <div class="process-section-title">
+          <h3><i class="fa-solid fa-arrows-spin"></i> วงจรการฝึกอบรมอย่างสมบูรณ์แบบ (End-to-End Training Process)</h3>
+          <p>ปรัชญาการทำงานที่มุ่งเน้นความรอบคอบ วินัย และ Growth Mindset ครอบคลุม 4 เสาหลักสำคัญ</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card card-yellow">
+            <div class="process-num">01</div>
+            <h4>Analyze & Plan</h4>
+            <p>วิเคราะห์ความต้องการฝึกอบรม (TNA), จัดทำแผนพัฒนาสมรรถนะรายบุคคล (IDP) และวางโครงสร้างหลักสูตรรายปีให้สอดคล้องกับกลยุทธ์องค์กร</p>
+          </div>
+
+          <div class="process-card card-blue">
+            <div class="process-num">02</div>
+            <h4>Design & Deliver</h4>
+            <p>ออกแบบเนื้อหา ปรับเปลี่ยนพฤติกรรมผู้เรียน สวมบทบาทวิทยากรบรรยายหลักสูตร Soft Skills และโค้ชพัฒนาทักษะให้กับวิทยากรภายใน</p>
+          </div>
+
+          <div class="process-card card-coral">
+            <div class="process-num">03</div>
+            <h4>Digital Learning</h4>
+            <p>พัฒนาสื่อนวัตกรรมยุคใหม่ เช่น E-Learning, Microlearning และตัดต่อ Learning Video เพื่อยกระดับความสะดวกและทันสมัย</p>
+          </div>
+
+          <div class="process-card card-green">
+            <div class="process-num">04</div>
+            <h4>Operations & Compliance</h4>
+            <p>ประสานงานสถาบันพัฒนาฝีมือแรงงาน กระทรวงแรงงาน เพื่อให้หลักสูตรเป็นไปตามมาตรฐานที่ พ.ร.บ. ส่งเสริมการพัฒนาฝีมือแรงงานกำหนด</p>
+          </div>
+        </div>
+
+        <!-- Featured Courses Grid -->
+        <div class="courses-wrap mt-4">
+          <h3 class="subheading"><i class="fa-solid fa-chalkboard-user"></i> ตัวอย่างหลักสูตรที่บรรยายและฝึกอบรมพนักงาน (Curriculum & Courses)</h3>
+          
+          <div class="courses-grid">
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="course-body">
+                <h4>การเพิ่มผลผลิตในการทำงานด้วยตนเอง เสริมสร้างการทำงานที่ยั่งยืน</h4>
+                <p>การบริหารเวลา การขจัดความสูญเปล่าในการทำงาน และการสร้างวินัยการทำงานส่วนบุคคล</p>
+              </div>
+            </div>
+
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-wrench"></i></div>
+              <div class="course-body">
+                <h4>การแก้ปัญหาหน้างานด้วยเทคนิค RCA (Root Cause Analysis)</h4>
+                <p>เทคนิคค้นหาสาเหตุที่แท้จริงของปัญหาหน้างาน เช่น Why-Why Analysis และ Fishbone Diagram</p>
+              </div>
+            </div>
+
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-comments"></i></div>
+              <div class="course-body">
+                <h4>การรับคำสั่ง รับมอบหมายงาน และการนำไปปฏิบัติเพื่อเป้าหมายของทีม</h4>
+                <p>การสื่อสารอย่างมีประสิทธิผล การทวนคำสั่ง ลดความคลาดเคลื่อนในการส่งมอบงาน</p>
+              </div>
+            </div>
+
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="course-body">
+                <h4>การทำงานอย่างมืออาชีพ (Professional Working Style)</h4>
+                <p>การปรับทัศนคติ เชาวน์อารมณ์ และมารยาทการประสานงานร่วมกับผู้อื่นในองค์กร</p>
+              </div>
+            </div>
+
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div class="course-body">
+                <h4>การทำงานร่วมกันอย่างมีผลสัมฤทธิ์ (High-Performing Team)</h4>
+                <p>การสร้างความไว้วางใจ การร่วมมือข้ามสายงาน และการแก้ไขความขัดแย้งเชิงสร้างสรรค์</p>
+              </div>
+            </div>
+
+            <div class="course-box">
+              <div class="course-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="course-body">
+                <h4>การสร้างสรรค์สื่อ VDO: สื่อการผลิตยางเรเดียล & ค่านิยมองค์กร</h4>
+                <p>ตัดต่อและกำกับสื่อ Technical Training Present, Core Value ดีสโตน, และคู่มือสื่อสอนพนักงานใหม่</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training Gallery -->
+        <div class="training-gallery-box mt-4">
+          <div class="gallery-header">
+            <h3><i class="fa-solid fa-images"></i> ภาพบรรยากาศการบรรยายและการจัดฝึกอบรมจริง (Training in Action)</h3>
+            <button class="mini-btn view-doc-btn" data-page="11">ดูภาพทั้งหมดใน CV</button>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item view-doc-btn" data-page="10">
+              <img src="assets/cv_pages/page_10.png" alt="การฝึกอบรมพนักงานและหลักสูตรภายใน">
+              <div class="gallery-caption">อบรมหลักสูตรวิทยากรต้นแบบ & Internal Auditor</div>
+            </div>
+            <div class="gallery-item view-doc-btn" data-page="11">
+              <img src="assets/cv_pages/page_11.png" alt="การบรรยายหลักสูตร Soft Skills">
+              <div class="gallery-caption">บรรยาย Soft Skills ทั้งพนักงานใหม่และพนักงานปัจจุบัน</div>
+            </div>
+            <div class="gallery-item view-doc-btn" data-page="12">
+              <img src="assets/cv_pages/page_12.png" alt="ติดตามการเรียนงานหน้างาน On-the-Job Training">
+              <div class="gallery-caption">ตรวจติดตามการเรียนงาน On-the-Job Training ในโรงงาน</div>
+            </div>
+            <div class="gallery-item view-doc-btn" data-page="13">
+              <img src="assets/cv_pages/page_13.png" alt="ตัวอย่างสื่อหลักสูตรและงานตัดต่อวิดีโอ">
+              <div class="gallery-caption">สื่อการสอน E-Learning & งานผลิต Learning Video</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MENU 7: DASHBOARD รายงานผลงาน (DASHBOARD)
+    =========================================== -->
+    <section id="dashboard" class="app-section bg-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-num">07</div>
+          <div>
+            <h2 class="section-title">DASHBOARD รายงานผลงาน (PERFORMANCE DASHBOARD)</h2>
+            <p class="section-desc">การสรุปสถิติเชิงปริมาณและคุณภาพ ตัวชี้วัดความสำเร็จ และความก้าวหน้าในการพัฒนาทรัพยากรมนุษย์</p>
+          </div>
+        </div>
+
+        <!-- Dashboard Filters & Controls -->
+        <div class="dashboard-controls-bar">
+          <div class="control-group">
+            <label for="yearFilter"><i class="fa-solid fa-calendar-days"></i> กรองตามช่วงปี:</label>
+            <select id="yearFilter" class="neo-select">
+              <option value="all">สรุปรวมทั้งหมด (2020 - 2026)</option>
+              <option value="recent">ช่วงล่าสุด (2024 - 2026)</option>
+              <option value="past">ช่วงเริ่มต้น (2020 - 2023)</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <span class="live-indicator"><span class="blink-dot"></span> ข้อมูลประมวลผลแบบ Interactive</span>
+          </div>
+        </div>
+
+        <!-- Top Metric Summary KPI Cards -->
+        <div class="kpi-grid">
+          <div class="kpi-card card-yellow">
+            <div class="kpi-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="kpi-data">
+              <div class="kpi-num" id="kpiTrained">1,580+</div>
+              <div class="kpi-label">พนักงานผ่านการฝึกอบรม (คน)</div>
+            </div>
+            <div class="kpi-badge">+18.5% YoY</div>
+          </div>
+
+          <div class="kpi-card card-blue">
+            <div class="kpi-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+            <div class="kpi-data">
+              <div class="kpi-num" id="kpiCourses">26</div>
+              <div class="kpi-label">หลักสูตรที่พัฒนา & บรรยาย</div>
+            </div>
+            <div class="kpi-badge">100% Approved DSD</div>
+          </div>
+
+          <div class="kpi-card card-coral">
+            <div class="kpi-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="kpi-data">
+              <div class="kpi-num" id="kpiHours">420+</div>
+              <div class="kpi-label">ชั่วโมงบรรยายและสอนงาน (ชม.)</div>
+            </div>
+            <div class="kpi-badge">Internal & DSD</div>
+          </div>
+
+          <div class="kpi-card card-green">
+            <div class="kpi-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="kpi-data">
+              <div class="kpi-num" id="kpiSatisfaction">96.8%</div>
+              <div class="kpi-label">ความพึงพอใจเฉลี่ยของผู้เรียน</div>
+            </div>
+            <div class="kpi-badge">ระดับดีเด่น</div>
+          </div>
+        </div>
+
+        <!-- Main Charts Grid -->
+        <div class="charts-grid">
+          <!-- Chart 1: Training Attendance Trend (Bar/Line Chart) -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3><i class="fa-solid fa-chart-column"></i> สถิติจำนวนพนักงานที่ได้รับการอบรมรายปี (2020 - 2026)</h3>
+              <span class="tag tag-yellow">ANNUAL ATTENDANCE</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="attendanceChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Course Category Breakdown (Doughnut Chart) -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3><i class="fa-solid fa-chart-pie"></i> สัดส่วนประเภทหลักสูตรฝึกอบรม (Course Categories)</h3>
+              <span class="tag tag-blue">CURRICULUM RATIO</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="categoryChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 3: Competency Radar (Radar Chart) -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3><i class="fa-solid fa-bullseye"></i> สมรรถนะและความเชี่ยวชาญ 6 ด้าน (Competency Matrix)</h3>
+              <span class="tag tag-coral">HRD SKILLS</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="competencyChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 4: Pre-Test vs Post-Test Learning Effectiveness (Bar Chart) -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3><i class="fa-solid fa-square-poll-vertical"></i> ผลสัมฤทธิ์การเรียนรู้ (Pre-Test vs Post-Test Evaluation)</h3>
+              <span class="tag tag-green">KIRKPATRICK LEVEL 2</span>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="effectivenessChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Achievement Table -->
+        <div class="table-card neo-box bg-white mt-4">
+          <div class="table-header">
+            <h3><i class="fa-solid fa-list-check"></i> ตารางสรุปโครงการสำคัญและการรับรองสมรรถนะ (Key Project Milestones)</h3>
+            <span class="tag tag-purple">VERIFIED RECORDS</span>
+          </div>
+          <div class="table-responsive">
+            <table class="neo-table">
+              <thead>
+                <tr>
+                  <th>ปี พ.ศ.</th>
+                  <th>โครงการ / ผลงานสำคัญ</th>
+                  <th>บทบาทหน้าที่</th>
+                  <th>หน่วยงาน / สถาบัน</th>
+                  <th>สถานะ / ผลลัพธ์</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>2568</strong></td>
+                  <td>การพัฒนาวิทยากรต้นแบบ (Master Trainer 18 ชม.)</td>
+                  <td>ผู้ผ่านการอบรมวิทยากร</td>
+                  <td>สถาบันพัฒนาฝีมือแรงงาน 16 นครปฐม</td>
+                  <td><span class="status-pill green">ผ่านเกณฑ์วุฒิบัตร</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2568</strong></td>
+                  <td>ISO 9001/14001/45001 Internal Auditor</td>
+                  <td>ผู้ตรวจประเมินภายใน</td>
+                  <td>Udumboon / สวิซซ์-วัน คอร์ปอเรชั่น</td>
+                  <td><span class="status-pill green">Certified</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2567-ปัจจุบัน</strong></td>
+                  <td>ออกแบบสถาปัตยกรรมสารสนเทศ HRMS / Auto-OJT Mapping</td>
+                  <td>ผู้วิจัยและผู้ออกแบบระบบ</td>
+                  <td>มจพ. (KMUTNB S-MBR)</td>
+                  <td><span class="status-pill blue">กำลังดำเนินการ</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2563, 64, 66, 67, 68</strong></td>
+                  <td>รางวัลเกียรติบัตรพนักงานดีเด่น (5 สมัย)</td>
+                  <td>เจ้าหน้าที่ฝึกอบรมอาวุโส</td>
+                  <td>บ.สวิซซ์-วัน คอร์ปอเรชั่น จำกัด</td>
+                  <td><span class="status-pill yellow">เกียรติบัตร 5 ปี</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2562</strong></td>
+                  <td>นำเสนอบทความวิจัยแบรนด์และสินค้าตาลโตนด</td>
+                  <td>ผู้วิจัยนำเสนอผลงาน</td>
+                  <td>The 8th PSU Trang National Conference</td>
+                  <td><span class="status-pill purple">Published</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2562</strong></td>
+                  <td>สำเร็จการศึกษาปริญญาตรี เกียรตินิยมอันดับ 2 (GPA 3.40)</td>
+                  <td>นักศึกษา บธ.บ. เอกการเงิน</td>
+                  <td>มหาวิทยาลัยศิลปากร</td>
+                  <td><span class="status-pill green">เกียรตินิยมอันดับ 2</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER (Fluid Width, Light Gray Background)
+         ตามโจทย์กำหนด:
+         - footer fluid width
+         - เติมสีพื้นหลัง เทาอ่อน
+         - ระบบเว็บส่วนบุคคล พัฒนาโดย นางสาวณัฐริกา อนันต์จรรยา
+    =========================================== -->
+    <footer class="fluid-footer">
+      <div class="footer-container">
+        <div class="footer-top-row">
+          <div class="footer-brand">
+            <div class="footer-logo-badge">CV • PORTFOLIO</div>
+            <h3 class="footer-author-name">นางสาวณัฐริกา อนันต์จรรยา</h3>
+            <p class="footer-author-desc">
+              เจ้าหน้าที่ฝึกอบรมอาวุโส (Senior Training Officer) บริษัท สวิซซ์-วัน คอร์ปอเรชั่น จำกัด<br>
+              นักศึกษาปริญญาโท บริหารธุรกิจมหาบัณฑิต (S-MBR) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            </p>
+          </div>
+
+          <div class="footer-nav-links">
+            <h4>เมนูนำทางหลัก</h4>
+            <div class="links-columns">
+              <a href="#education">1. ประวัติการศึกษา</a>
+              <a href="#contact">2. สถานที่ติดต่อ</a>
+              <a href="#achievements">3. ผลงานโดดเด่น</a>
+              <a href="#academic">4. ผลงานวิชาการ</a>
+              <a href="#research">5. ผลงานบทความวิจัย</a>
+              <a href="#speaker">6. งานวิทยากร</a>
+              <a href="#dashboard">7. Dashboard รายงานผลงาน</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-summary">
+            <h4>ติดต่อด่วน</h4>
+            <p><i class="fa-solid fa-phone"></i> 087-716-2468</p>
+            <p><i class="fa-solid fa-envelope"></i> s6916011856072@email.kmutnb.ac.th</p>
+            <p><i class="fa-brands fa-line"></i> LINE: dn_ntrk</p>
+            <a href="#hero" class="back-to-top-btn neo-btn neo-btn-yellow">
+              <i class="fa-solid fa-arrow-up"></i> กลับขึ้นด้านบน (TOP)
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div class="footer-required-text">
+            <strong>ระบบเว็บส่วนบุคคล พัฒนาโดย นางสาวณัฐริกา อนันต์จรรยา</strong>
+          </div>
+          <div class="footer-copyright-sub">
+            © 2026 Miss Nuttarikha Anunjunya. All Rights Reserved. • Designed in Authentic Neobrutalism Minimalist Style
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- End #mainApp -->
+
+
+  <!-- ==========================================
+       MODAL LIGHTBOX (For viewing 15 CV Pages)
+  =========================================== -->
+  <div id="docViewerModal" class="neo-modal-overlay">
+    <div class="neo-modal-box">
+      <div class="neo-modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span id="modalDocTitle">เอกสารแฟ้มสะสมผลงาน (Curriculum Vitae)</span>
+          <span id="modalPageIndicator" class="tag tag-yellow">หน้าที่ 1 / 15</span>
+        </div>
+        <button id="closeModalBtn" class="close-modal-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="neo-modal-body">
+        <div class="modal-img-container">
+          <img id="modalImg" src="assets/cv_pages/page_1.png" alt="Document Page">
+        </div>
+      </div>
+
+      <div class="neo-modal-footer">
+        <div class="page-nav-btns">
+          <button id="prevPageBtn" class="mini-btn"><i class="fa-solid fa-chevron-left"></i> หน้าก่อนหน้า</button>
+          <span id="pageSelectDropdownWrap">
+            <select id="pageSelect" class="neo-select-sm">
+              <option value="1">หน้า 1: หน้าปก (CV Cover)</option>
+              <option value="2">หน้า 2: สารบัญ (Contents)</option>
+              <option value="3">หน้า 3: คำนำ (Preface & Training Process)</option>
+              <option value="4">หน้า 4: ข้อมูลส่วนตัวและครอบครัว (Profile)</option>
+              <option value="5">หน้า 5: ประวัติการศึกษาและงานวิจัย ป.ตรี (Education)</option>
+              <option value="6">หน้า 6: กิจกรรมและการนำเสนองานวิจัย PSU Trang (Activities)</option>
+              <option value="7">หน้า 7: ใบแสดงผลการเรียน หน้า 1 (Transcript P.1)</option>
+              <option value="8">หน้า 8: ใบแสดงผลการเรียน หน้า 2 (Transcript P.2 - GPA 3.40)</option>
+              <option value="9">หน้า 9: ประสบการณ์การทำงานและหน้าที่ (Work Experience)</option>
+              <option value="10">หน้า 10: การเข้าอบรมวิทยากรต้นแบบและ Auditor (Training)</option>
+              <option value="11">หน้า 11: การบรรยาย Soft Skills พนักงาน (Delivery)</option>
+              <option value="12">หน้า 12: การติดตามการเรียนงาน OJT ในโรงงาน (Monitoring)</option>
+              <option value="13">หน้า 13: ตัวอย่างหลักสูตรและงานตัดต่อ VDO (Curriculum & Media)</option>
+              <option value="14">หน้า 14: เกียรติบัตรพนักงานดีเด่น 5 สมัย (Outstanding Awards)</option>
+              <option value="15">หน้า 15: วุฒิบัตรวิทยากรต้นแบบ & ISO Auditor (Certificates)</option>
+            </select>
+          </span>
+          <button id="nextPageBtn" class="mini-btn">หน้าถัดไป <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <button id="downloadPageBtn" class="mini-btn mini-btn-yellow"><i class="fa-solid fa-download"></i> เปิดภาพขนาดเต็ม</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
